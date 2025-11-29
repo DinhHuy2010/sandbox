@@ -1,0 +1,10 @@
+[project]
+name = "uv-codespace-template"
+version = "0.1.0"
+description = "GitHub Codespace template with UV-managed Python project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.0",
+    "requests>=2.31.0",
+]
