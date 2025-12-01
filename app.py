@@ -62,3 +62,4 @@ app = Starlette(
     ],
 )
 app.mount("/wikidata", wikidata.app)
+
