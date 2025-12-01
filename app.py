@@ -4,8 +4,12 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse, PlainTextResponse, Response
 from starlette.routing import Route
 
-import wikidata
 from shared import ContentTypeMiddleware, templates
+
+APPS = {
+    "/wikidata": "wikidata:app",
+    "/cgi": "cgilike:app",
+}
 
 
 async def home(request: Request) -> Response:
@@ -61,5 +65,8 @@ app = Starlette(
         ),
     ],
 )
-app.mount("/wikidata", wikidata.app)
 
+for prefix, app_path in APPS.items():
+    module_name, app_name = app_path.split(":")
+    module = __import__(module_name)
+    app.mount(prefix, getattr(module, app_name))
