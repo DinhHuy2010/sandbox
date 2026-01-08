@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikidata search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oojs/7.0.1/oojs.min.js"
+        integrity="sha512-lnnpa41SyaafCPBqPY1Her8p+UzZHFeHsY6tEv3GOFHugjCPW7p7isPzfHR8i90/dC8EsA7Z9/8gQdfcjeAuFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oojs-ui/0.53.0/oojs-ui.min.js"
+        integrity="sha512-HvWUYqVcZ/DvBab5NfQi0LF3yCF2pwe2YLRf5RoZmIFFDq280tySTCok6kZVnf6F7RUlVSPg6Q3R1NR0IU/Nug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oojs-ui/0.53.0/oojs-ui-wikimediaui.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/oojs-ui/0.53.0/oojs-ui-wikimediaui.min.css">
+</head>
+
+<body>
+    <script>
+        const button = new OO.ui.ButtonWidget( {
+            label: 'Click me',
+            title: 'A simple button',
+            flags: [ 'primary' ]
+        } );
+        button.on("click", function () {
+            alert("Button clicked!");
+        });
+        $( document.body ).append( button.$element );
+    </script>
+</body>
+</html>
