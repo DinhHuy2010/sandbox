@@ -13,5 +13,10 @@
                 "python.defaultInterpreterPath": ".venv/bin/python"
             }
         }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
     }
 }
