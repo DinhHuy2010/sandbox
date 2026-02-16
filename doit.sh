@@ -1,0 +1,25 @@
+datamodel-codegen --url https://raw.githubusercontent.com/github/rest-api-description/refs/heads/main/descriptions/api.github.com/api.github.com.2022-11-28.json \
+--input-file-type openapi \
+--output github_rest_api_models.py \
+--output-model-type pydantic_v2.BaseModel \
+--allow-population-by-field-name \
+--class-name-prefix GitHubRestAPI \
+--collapse-reuse-models \
+--collapse-root-models \
+--keep-model-order \
+--reuse-model \
+--target-python-version 3.10 \
+--union-mode smart \
+--strict-nullable \
+--use-default \
+--use-frozen-field \
+--use-generic-base-class \
+--extra-fields ignore \
+--field-constraints \
+--use-field-description \
+--use-field-description-example \
+--use-inline-field-description \
+--use-schema-description \
+--use-annotated \
+--use-standard-collections \
+--formatters ruff-format ruff-check \

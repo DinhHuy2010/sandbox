@@ -1,0 +1,26 @@
+datamodel-codegen --input wmstreams_spec.json \
+--input-file-type openapi \
+--output wikimedia_event_stream_models.py \
+--output-model-type pydantic_v2.BaseModel \
+--allow-population-by-field-name \
+--class-name-prefix WikimediaEventStream \
+--collapse-reuse-models \
+--collapse-root-models \
+--keep-model-order \
+--reuse-model \
+--target-python-version 3.10 \
+--union-mode smart \
+--strict-nullable \
+--use-default \
+--use-frozen-field \
+--use-generic-base-class \
+--extra-fields ignore \
+--field-constraints \
+--use-field-description \
+--use-field-description-example \
+--use-inline-field-description \
+--use-schema-description \
+--use-annotated \
+--use-standard-collections \
+--formatters ruff-format ruff-check \
+--openapi-scopes paths
