@@ -17,3 +17,8 @@ dependencies = [
     "types-lxml>=2026.1.1",
     "uvicorn>=0.38.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "mywebapp",
+]
