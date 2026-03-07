@@ -1,0 +1,25 @@
+uvx --from datamodel-code-generator[http,ruff] datamodel-codegen --url https://raw.githubusercontent.com/microsoft/pyright/main/packages/vscode-pyright/schemas/pyrightconfig.schema.json \
+--input-file-type jsonschema \
+--output pyrightconfig.py \
+--output-model-type pydantic_v2.BaseModel \
+--allow-population-by-field-name \
+--collapse-reuse-models \
+--collapse-root-models \
+--keep-model-order \
+--reuse-model \
+--target-python-version 3.10 \
+--union-mode smart \
+--strict-nullable \
+--use-default \
+--use-frozen-field \
+--use-generic-base-class \
+--extra-fields ignore \
+--field-constraints \
+--use-field-description \
+--use-field-description-example \
+--use-inline-field-description \
+--use-schema-description \
+--use-annotated \
+--use-standard-collections \
+--formatters ruff-format ruff-check \
+--openapi-scopes paths
