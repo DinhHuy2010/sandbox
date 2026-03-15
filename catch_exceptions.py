@@ -2,7 +2,7 @@ import sys
 from types import FrameType
 from typing import Any
 
-import IPython
+from IPython.terminal.embed import InteractiveShellEmbed
 
 
 class catch_exceptions:
@@ -59,4 +59,6 @@ def lol(err: Exception) -> None:
 #     catcher.exceptions
 # )  # Output: [ValueError('This is a ValueError'), KeyError('This is a KeyError')]
 with catch_exceptions() as c:
-    IPython.embed()
+    sh = InteractiveShellEmbed()
+    sh()
+print(len(c.exceptions))
