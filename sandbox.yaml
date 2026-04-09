@@ -1,6 +1,0 @@
-modules:
-  - !pypi
-      name: pip
-  - &x []
-A: *x
-B: *x

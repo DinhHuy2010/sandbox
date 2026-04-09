@@ -1,0 +1,24 @@
+[project]
+name = "pypi"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "distlib>=0.4.0",
+    "hishel[httpx]>=1.1.9",
+    "httpx>=0.28.1",
+    "lxml>=6.0.2",
+    "orjson>=3.11.7",
+    "packaging>=26.0",
+    "pydantic>=2.12.5",
+    "pypi-json>=0.5.0.post1",
+    "pypi-simple>=1.8.0",
+    "remotezip>=0.12.3",
+]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[dependency-groups]
+dev = [
+    "types-lxml>=2026.2.16",
+]

@@ -15,10 +15,15 @@ dependencies = [
     "json-stream>=2.4.1",
     "libcst>=1.8.6",
     "lxml>=6.0.2",
+    "markdownmaker>=0.4.0",
     "more-itertools>=10.8.0",
+    "openapi-pydantic>=0.5.1",
     "orjson>=3.11.7",
+    "packaging>=26.0",
+    "polyfactory>=3.3.0",
     "pydantic[email]>=2.12.5",
     "pyinterpeter",
+    "pypi-simple>=1.8.0",
     "pyyaml>=6.0.3",
     "starlette>=0.50.0",
     "tqdm>=4.67.1",
@@ -32,6 +37,11 @@ members = [
     "schemagenerator",
     "mycrawler",
     "pyinterpeter",
+    "wpsandbox",
+    "students-directory",
+    "pypi",
+    "gh",
+    "geo",
 ]
 
 [tool.uv.sources]

@@ -1,0 +1,4737 @@
+refs:
+  125143001996800:
+    type: dict
+    props:
+      $schema:
+      - {}
+      - type: str
+      description:
+      - {}
+      - type: str
+      allowComments:
+      - {}
+      - type: bool
+      allowTrailingCommas:
+      - {}
+      - type: bool
+      type:
+      - {}
+      - type: str
+      definitions:
+      - 125143001701376:
+          type: dict
+          props:
+            diagnostic:
+            - 125143001511424:
+                type: dict
+                props:
+                  anyOf:
+                  - 125143001511040:
+                      type: list
+                      items:
+                        type: union
+                        schemas:
+                        - - 125143001510272:
+                              type: dict
+                              props:
+                                type:
+                                - {}
+                                - type: str
+                              required_keys:
+                              - type
+                          - type: ref
+                            ref: 125143001510272
+                        - - 125143001510720:
+                              type: dict
+                              props:
+                                type:
+                                - {}
+                                - type: str
+                                enum:
+                                - 125143001511232:
+                                    type: list
+                                    items:
+                                    - {}
+                                    - type: str
+                                - type: ref
+                                  ref: 125143001511232
+                              required_keys:
+                              - type
+                              - enum
+                          - type: ref
+                            ref: 125143001510720
+                  - type: ref
+                    ref: 125143001511040
+                required_keys:
+                - anyOf
+            - type: ref
+              ref: 125143001511424
+            extraPaths:
+            - 125143001512832:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  items:
+                  - 125143001512640:
+                      type: dict
+                      props:
+                        type:
+                        - {}
+                        - type: str
+                        title:
+                        - {}
+                        - type: str
+                        default:
+                        - {}
+                        - type: str
+                        pattern:
+                        - {}
+                        - type: str
+                      required_keys:
+                      - type
+                      - title
+                      - default
+                      - pattern
+                  - type: ref
+                    ref: 125143001512640
+                required_keys:
+                - type
+                - title
+                - items
+            - type: ref
+              ref: 125143001512832
+            pythonVersion:
+            - 125143001530432:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                  examples:
+                  - 125143001513664:
+                      type: list
+                      items:
+                      - {}
+                      - type: str
+                  - type: ref
+                    ref: 125143001513664
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - default
+                - examples
+                - pattern
+            - type: ref
+              ref: 125143001530432
+            pythonPlatform:
+            - 125143001531584:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                  examples:
+                  - 125143001531264:
+                      type: list
+                      items:
+                      - {}
+                      - type: str
+                  - type: ref
+                    ref: 125143001531264
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - default
+                - examples
+                - pattern
+            - type: ref
+              ref: 125143001531584
+            disableBytesTypePromotions:
+            - 125143001532544:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001532544
+            strictListInference:
+            - 125143001533504:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001533504
+            strictSetInference:
+            - 125143001534464:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001534464
+            strictDictionaryInference:
+            - 125143001535424:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001535424
+            analyzeUnannotatedFunctions:
+            - 125143001536384:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001536384
+            strictParameterNoneValue:
+            - 125143001537344:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001537344
+            enableExperimentalFeatures:
+            - 125143001538304:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001538304
+            enableTypeIgnoreComments:
+            - 125143001539264:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001539264
+            enableReachabilityAnalysis:
+            - 125143001540224:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001540224
+            deprecateTypingAliases:
+            - 125143001541184:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001541184
+            reportGeneralTypeIssues:
+            - 125143001542144:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001542144
+            reportPropertyTypeMismatch:
+            - 125143001543104:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001543104
+            reportFunctionMemberAccess:
+            - 125143001544064:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001544064
+            reportMissingImports:
+            - 125143001545024:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001545024
+            reportMissingModuleSource:
+            - 125143001545984:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001545984
+            reportInvalidTypeForm:
+            - 125143001579776:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001579776
+            reportMissingTypeStubs:
+            - 125143001580736:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001580736
+            reportImportCycles:
+            - 125143001581696:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001581696
+            reportUnusedImport:
+            - 125143001582656:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001582656
+            reportUnusedClass:
+            - 125143001583616:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001583616
+            reportUnusedFunction:
+            - 125143001584576:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001584576
+            reportUnusedVariable:
+            - 125143001585536:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001585536
+            reportDuplicateImport:
+            - 125143001586496:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001586496
+            reportWildcardImportFromLibrary:
+            - 125143001587456:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001587456
+            reportAbstractUsage:
+            - 125143001588416:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001588416
+            reportArgumentType:
+            - 125143001589376:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001589376
+            reportAssertTypeFailure:
+            - 125143001590336:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001590336
+            reportAssignmentType:
+            - 125143001591296:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001591296
+            reportAttributeAccessIssue:
+            - 125143001592256:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001592256
+            reportCallIssue:
+            - 125143001593216:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001593216
+            reportInconsistentOverload:
+            - 125143001594176:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001594176
+            reportIndexIssue:
+            - 125143001595136:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001595136
+            reportInvalidTypeArguments:
+            - 125143001612544:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001612544
+            reportNoOverloadImplementation:
+            - 125143001613504:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001613504
+            reportOperatorIssue:
+            - 125143001614464:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001614464
+            reportOptionalSubscript:
+            - 125143001615424:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001615424
+            reportOptionalMemberAccess:
+            - 125143001616384:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001616384
+            reportOptionalCall:
+            - 125143001617344:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001617344
+            reportOptionalIterable:
+            - 125143001618304:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001618304
+            reportOptionalContextManager:
+            - 125143001619264:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001619264
+            reportOptionalOperand:
+            - 125143001620224:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001620224
+            reportRedeclaration:
+            - 125143001621184:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001621184
+            reportReturnType:
+            - 125143001622144:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001622144
+            reportTypedDictNotRequiredAccess:
+            - 125143001623104:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001623104
+            reportUntypedFunctionDecorator:
+            - 125143001624064:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001624064
+            reportUntypedClassDecorator:
+            - 125143001625024:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001625024
+            reportUntypedBaseClass:
+            - 125143001625984:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001625984
+            reportUntypedNamedTuple:
+            - 125143001626944:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001626944
+            reportPrivateUsage:
+            - 125143001627904:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001627904
+            reportTypeCommentUsage:
+            - 125143001645312:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001645312
+            reportPrivateImportUsage:
+            - 125143001646272:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001646272
+            reportConstantRedefinition:
+            - 125143001647232:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001647232
+            reportDeprecated:
+            - 125143001648192:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001648192
+            reportIncompatibleMethodOverride:
+            - 125143001649152:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001649152
+            reportIncompatibleVariableOverride:
+            - 125143001650112:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001650112
+            reportInconsistentConstructor:
+            - 125143001651072:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001651072
+            reportOverlappingOverload:
+            - 125143001652032:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001652032
+            reportPossiblyUnboundVariable:
+            - 125143001652992:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001652992
+            reportMissingSuperCall:
+            - 125143001653952:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001653952
+            reportUninitializedInstanceVariable:
+            - 125143001654912:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001654912
+            reportInvalidStringEscapeSequence:
+            - 125143001655872:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001655872
+            reportUnknownParameterType:
+            - 125143001656832:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001656832
+            reportUnknownArgumentType:
+            - 125143001657792:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001657792
+            reportUnknownLambdaType:
+            - 125143001658752:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001658752
+            reportUnknownVariableType:
+            - 125143001659712:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001659712
+            reportUnknownMemberType:
+            - 125143001660672:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001660672
+            reportMissingParameterType:
+            - 125143001661696:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001661696
+            reportMissingTypeArgument:
+            - 125143001662656:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001662656
+            reportInvalidTypeVarUse:
+            - 125143001663616:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001663616
+            reportCallInDefaultInitializer:
+            - 125143001664576:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001664576
+            reportUnnecessaryIsInstance:
+            - 125143001665536:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001665536
+            reportUnnecessaryCast:
+            - 125143001666496:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001666496
+            reportUnnecessaryComparison:
+            - 125143001667456:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001667456
+            reportUnnecessaryContains:
+            - 125143001668416:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001668416
+            reportAssertAlwaysTrue:
+            - 125143001669376:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001669376
+            reportSelfClsParameterName:
+            - 125143001670336:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001670336
+            reportImplicitStringConcatenation:
+            - 125143001671296:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001671296
+            reportUnboundVariable:
+            - 125143001672256:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001672256
+            reportUnhashable:
+            - 125143001673216:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001673216
+            reportUndefinedVariable:
+            - 125143001674176:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001674176
+            reportInvalidStubStatement:
+            - 125143001675136:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001675136
+            reportIncompleteStub:
+            - 125143001676096:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001676096
+            reportUnsupportedDunderAll:
+            - 125143001677056:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001677056
+            reportUnusedCallResult:
+            - 125143001694464:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001694464
+            reportUnusedCoroutine:
+            - 125143001695424:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001695424
+            reportUnusedExcept:
+            - 125143001696384:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001696384
+            reportUnusedExpression:
+            - 125143001697344:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001697344
+            reportUnnecessaryTypeIgnoreComment:
+            - 125143001698304:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001698304
+            reportMatchNotExhaustive:
+            - 125143001699264:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001699264
+            reportUnreachable:
+            - 125143001700224:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001700224
+            reportImplicitOverride:
+            - 125143001701184:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+                - title
+                - default
+            - type: ref
+              ref: 125143001701184
+          required_keys:
+          - diagnostic
+          - extraPaths
+          - pythonVersion
+          - pythonPlatform
+          - disableBytesTypePromotions
+          - strictListInference
+          - strictSetInference
+          - strictDictionaryInference
+          - analyzeUnannotatedFunctions
+          - strictParameterNoneValue
+          - enableExperimentalFeatures
+          - enableTypeIgnoreComments
+          - enableReachabilityAnalysis
+          - deprecateTypingAliases
+          - reportGeneralTypeIssues
+          - reportPropertyTypeMismatch
+          - reportFunctionMemberAccess
+          - reportMissingImports
+          - reportMissingModuleSource
+          - reportInvalidTypeForm
+          - reportMissingTypeStubs
+          - reportImportCycles
+          - reportUnusedImport
+          - reportUnusedClass
+          - reportUnusedFunction
+          - reportUnusedVariable
+          - reportDuplicateImport
+          - reportWildcardImportFromLibrary
+          - reportAbstractUsage
+          - reportArgumentType
+          - reportAssertTypeFailure
+          - reportAssignmentType
+          - reportAttributeAccessIssue
+          - reportCallIssue
+          - reportInconsistentOverload
+          - reportIndexIssue
+          - reportInvalidTypeArguments
+          - reportNoOverloadImplementation
+          - reportOperatorIssue
+          - reportOptionalSubscript
+          - reportOptionalMemberAccess
+          - reportOptionalCall
+          - reportOptionalIterable
+          - reportOptionalContextManager
+          - reportOptionalOperand
+          - reportRedeclaration
+          - reportReturnType
+          - reportTypedDictNotRequiredAccess
+          - reportUntypedFunctionDecorator
+          - reportUntypedClassDecorator
+          - reportUntypedBaseClass
+          - reportUntypedNamedTuple
+          - reportPrivateUsage
+          - reportTypeCommentUsage
+          - reportPrivateImportUsage
+          - reportConstantRedefinition
+          - reportDeprecated
+          - reportIncompatibleMethodOverride
+          - reportIncompatibleVariableOverride
+          - reportInconsistentConstructor
+          - reportOverlappingOverload
+          - reportPossiblyUnboundVariable
+          - reportMissingSuperCall
+          - reportUninitializedInstanceVariable
+          - reportInvalidStringEscapeSequence
+          - reportUnknownParameterType
+          - reportUnknownArgumentType
+          - reportUnknownLambdaType
+          - reportUnknownVariableType
+          - reportUnknownMemberType
+          - reportMissingParameterType
+          - reportMissingTypeArgument
+          - reportInvalidTypeVarUse
+          - reportCallInDefaultInitializer
+          - reportUnnecessaryIsInstance
+          - reportUnnecessaryCast
+          - reportUnnecessaryComparison
+          - reportUnnecessaryContains
+          - reportAssertAlwaysTrue
+          - reportSelfClsParameterName
+          - reportImplicitStringConcatenation
+          - reportUnboundVariable
+          - reportUnhashable
+          - reportUndefinedVariable
+          - reportInvalidStubStatement
+          - reportIncompleteStub
+          - reportUnsupportedDunderAll
+          - reportUnusedCallResult
+          - reportUnusedCoroutine
+          - reportUnusedExcept
+          - reportUnusedExpression
+          - reportUnnecessaryTypeIgnoreComment
+          - reportMatchNotExhaustive
+          - reportUnreachable
+          - reportImplicitOverride
+      - type: ref
+        ref: 125143001701376
+      properties:
+      - 125143001996544:
+          type: dict
+          props:
+            extends:
+            - 125143001702528:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - pattern
+            - type: ref
+              ref: 125143001702528
+            include:
+            - 125143001704256:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  items:
+                  - 125143001704064:
+                      type: dict
+                      props:
+                        type:
+                        - {}
+                        - type: str
+                        title:
+                        - {}
+                        - type: str
+                        pattern:
+                        - {}
+                        - type: str
+                      required_keys:
+                      - type
+                      - title
+                      - pattern
+                  - type: ref
+                    ref: 125143001704064
+                required_keys:
+                - type
+                - title
+                - items
+            - type: ref
+              ref: 125143001704256
+            exclude:
+            - 125143001705984:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  items:
+                  - 125143001705792:
+                      type: dict
+                      props:
+                        type:
+                        - {}
+                        - type: str
+                        title:
+                        - {}
+                        - type: str
+                        pattern:
+                        - {}
+                        - type: str
+                      required_keys:
+                      - type
+                      - title
+                      - pattern
+                  - type: ref
+                    ref: 125143001705792
+                required_keys:
+                - type
+                - title
+                - items
+            - type: ref
+              ref: 125143001705984
+            ignore:
+            - 125143001707712:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  items:
+                  - 125143001707520:
+                      type: dict
+                      props:
+                        type:
+                        - {}
+                        - type: str
+                        title:
+                        - {}
+                        - type: str
+                        pattern:
+                        - {}
+                        - type: str
+                      required_keys:
+                      - type
+                      - title
+                      - pattern
+                  - type: ref
+                    ref: 125143001707520
+                required_keys:
+                - type
+                - title
+                - items
+            - type: ref
+              ref: 125143001707712
+            strict:
+            - 125143001709440:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  items:
+                  - 125143001709248:
+                      type: dict
+                      props:
+                        type:
+                        - {}
+                        - type: str
+                        title:
+                        - {}
+                        - type: str
+                        pattern:
+                        - {}
+                        - type: str
+                      required_keys:
+                      - type
+                      - title
+                      - pattern
+                  - type: ref
+                    ref: 125143001709248
+                required_keys:
+                - type
+                - title
+                - items
+            - type: ref
+              ref: 125143001709440
+            defineConstant:
+            - 125143001728064:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  properties:
+                  - 125143001710400:
+                      type: dict
+                      props: {}
+                      required_keys: []
+                  - type: ref
+                    ref: 125143001710400
+                  additionalProperties:
+                  - 125143001727872:
+                      type: dict
+                      props:
+                        type:
+                        - 125143001727616:
+                            type: list
+                            items:
+                            - {}
+                            - type: str
+                        - type: ref
+                          ref: 125143001727616
+                        title:
+                        - {}
+                        - type: str
+                      required_keys:
+                      - type
+                      - title
+                  - type: ref
+                    ref: 125143001727872
+                required_keys:
+                - type
+                - title
+                - properties
+                - additionalProperties
+            - type: ref
+              ref: 125143001728064
+            typeCheckingMode:
+            - 125143001729216:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  enum:
+                  - 125143001729408:
+                      type: list
+                      items:
+                      - {}
+                      - type: str
+                  - type: ref
+                    ref: 125143001729408
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - enum
+                - title
+                - default
+            - type: ref
+              ref: 125143001729216
+            useLibraryCodeForTypes:
+            - 125143001730432:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001730432
+            typeshedPath:
+            - 125143001731584:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - default
+                - pattern
+            - type: ref
+              ref: 125143001731584
+            stubPath:
+            - 125143001733184:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                  examples:
+                  - 125143001732736:
+                      type: list
+                      items:
+                      - {}
+                      - type: str
+                  - type: ref
+                    ref: 125143001732736
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - default
+                - examples
+                - pattern
+            - type: ref
+              ref: 125143001733184
+            disableBytesTypePromotions:
+            - 125143001733760:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001733760
+            strictListInference:
+            - 125143001734336:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001734336
+            strictSetInference:
+            - 125143001734912:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001734912
+            strictDictionaryInference:
+            - 125143001735488:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001735488
+            analyzeUnannotatedFunctions:
+            - 125143001736064:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001736064
+            strictParameterNoneValue:
+            - 125143001736640:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001736640
+            enableExperimentalFeatures:
+            - 125143001737216:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001737216
+            enableTypeIgnoreComments:
+            - 125143001737792:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001737792
+            enableReachabilityAnalysis:
+            - 125143001738368:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001738368
+            deprecateTypingAliases:
+            - 125143001738944:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001738944
+            reportGeneralTypeIssues:
+            - 125143001739520:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001739520
+            reportPropertyTypeMismatch:
+            - 125143001740096:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001740096
+            reportFunctionMemberAccess:
+            - 125143001740672:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001740672
+            reportMissingImports:
+            - 125143001741248:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001741248
+            reportMissingModuleSource:
+            - 125143001741824:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001741824
+            reportInvalidTypeForm:
+            - 125143001742400:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001742400
+            reportMissingTypeStubs:
+            - 125143001742976:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001742976
+            reportImportCycles:
+            - 125143001776384:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001776384
+            reportUnusedImport:
+            - 125143001776960:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001776960
+            reportUnusedClass:
+            - 125143001777536:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001777536
+            reportUnusedFunction:
+            - 125143001778112:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001778112
+            reportUnusedVariable:
+            - 125143001778688:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001778688
+            reportDuplicateImport:
+            - 125143001779264:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001779264
+            reportWildcardImportFromLibrary:
+            - 125143001779840:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001779840
+            reportAbstractUsage:
+            - 125143001780416:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001780416
+            reportArgumentType:
+            - 125143001780992:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001780992
+            reportAssertTypeFailure:
+            - 125143001781568:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001781568
+            reportAssignmentType:
+            - 125143001782144:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001782144
+            reportAttributeAccessIssue:
+            - 125143001782720:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001782720
+            reportCallIssue:
+            - 125143001783296:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001783296
+            reportInconsistentOverload:
+            - 125143001783872:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001783872
+            reportIndexIssue:
+            - 125143001784448:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001784448
+            reportInvalidTypeArguments:
+            - 125143001785024:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001785024
+            reportNoOverloadImplementation:
+            - 125143001785600:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001785600
+            reportOperatorIssue:
+            - 125143001786176:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001786176
+            reportOptionalSubscript:
+            - 125143001786752:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001786752
+            reportOptionalMemberAccess:
+            - 125143001787328:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001787328
+            reportOptionalCall:
+            - 125143001787904:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001787904
+            reportOptionalIterable:
+            - 125143001788480:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001788480
+            reportOptionalContextManager:
+            - 125143001789056:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001789056
+            reportOptionalOperand:
+            - 125143001789632:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001789632
+            reportRedeclaration:
+            - 125143001790208:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001790208
+            reportReturnType:
+            - 125143001790784:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001790784
+            reportTypedDictNotRequiredAccess:
+            - 125143001791360:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001791360
+            reportUntypedFunctionDecorator:
+            - 125143001791936:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001791936
+            reportUntypedClassDecorator:
+            - 125143001808960:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001808960
+            reportUntypedBaseClass:
+            - 125143001809536:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001809536
+            reportUntypedNamedTuple:
+            - 125143001810112:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001810112
+            reportPrivateUsage:
+            - 125143001810688:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001810688
+            reportTypeCommentUsage:
+            - 125143001811264:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001811264
+            reportPrivateImportUsage:
+            - 125143001811840:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001811840
+            reportConstantRedefinition:
+            - 125143001812416:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001812416
+            reportDeprecated:
+            - 125143001812992:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001812992
+            reportIncompatibleMethodOverride:
+            - 125143001813568:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001813568
+            reportIncompatibleVariableOverride:
+            - 125143001814144:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001814144
+            reportInconsistentConstructor:
+            - 125143001814720:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001814720
+            reportOverlappingOverload:
+            - 125143001815296:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001815296
+            reportPossiblyUnboundVariable:
+            - 125143001815872:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001815872
+            reportMissingSuperCall:
+            - 125143001816448:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001816448
+            reportUninitializedInstanceVariable:
+            - 125143001817024:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001817024
+            reportInvalidStringEscapeSequence:
+            - 125143001817600:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001817600
+            reportUnknownParameterType:
+            - 125143001818176:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001818176
+            reportUnknownArgumentType:
+            - 125143001818752:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001818752
+            reportUnknownLambdaType:
+            - 125143001819328:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001819328
+            reportUnknownVariableType:
+            - 125143001819904:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001819904
+            reportUnknownMemberType:
+            - 125143001820480:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001820480
+            reportMissingParameterType:
+            - 125143001821056:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001821056
+            reportMissingTypeArgument:
+            - 125143001821632:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001821632
+            reportInvalidTypeVarUse:
+            - 125143001822208:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001822208
+            reportCallInDefaultInitializer:
+            - 125143001822784:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001822784
+            reportUnnecessaryIsInstance:
+            - 125143001823360:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001823360
+            reportUnnecessaryCast:
+            - 125143001823936:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001823936
+            reportUnnecessaryComparison:
+            - 125143001824512:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001824512
+            reportUnnecessaryContains:
+            - 125143001825088:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001825088
+            reportAssertAlwaysTrue:
+            - 125143001858496:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001858496
+            reportSelfClsParameterName:
+            - 125143001859072:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001859072
+            reportImplicitStringConcatenation:
+            - 125143001859648:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001859648
+            reportUnboundVariable:
+            - 125143001860224:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001860224
+            reportUnhashable:
+            - 125143001860800:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001860800
+            reportUndefinedVariable:
+            - 125143001861376:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001861376
+            reportInvalidStubStatement:
+            - 125143001861952:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001861952
+            reportIncompleteStub:
+            - 125143001862528:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001862528
+            reportUnsupportedDunderAll:
+            - 125143001863104:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001863104
+            reportUnusedCallResult:
+            - 125143001863680:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001863680
+            reportUnusedCoroutine:
+            - 125143001864256:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001864256
+            reportUnusedExcept:
+            - 125143001864832:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001864832
+            reportUnusedExpression:
+            - 125143001865408:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001865408
+            reportUnnecessaryTypeIgnoreComment:
+            - 125143001865984:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001865984
+            reportMatchNotExhaustive:
+            - 125143001866560:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001866560
+            reportUnreachable:
+            - 125143001867136:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001867136
+            reportImplicitOverride:
+            - 125143001867712:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001867712
+            extraPaths:
+            - 125143001868288:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001868288
+            pythonVersion:
+            - 125143001868864:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001868864
+            pythonPlatform:
+            - 125143001869440:
+                type: dict
+                props:
+                  $ref:
+                  - {}
+                  - type: str
+                required_keys:
+                - $ref
+            - type: ref
+              ref: 125143001869440
+            venvPath:
+            - 125143001870592:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - default
+                - pattern
+            - type: ref
+              ref: 125143001870592
+            venv:
+            - 125143001872192:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: str
+                  examples:
+                  - 125143001871744:
+                      type: list
+                      items:
+                      - {}
+                      - type: str
+                  - type: ref
+                    ref: 125143001871744
+                  pattern:
+                  - {}
+                  - type: str
+                required_keys:
+                - type
+                - title
+                - default
+                - examples
+                - pattern
+            - type: ref
+              ref: 125143001872192
+            verboseOutput:
+            - 125143001873152:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  default:
+                  - {}
+                  - type: bool
+                required_keys:
+                - type
+                - title
+                - default
+            - type: ref
+              ref: 125143001873152
+            executionEnvironments:
+            - 125143001996352:
+                type: dict
+                props:
+                  type:
+                  - {}
+                  - type: str
+                  title:
+                  - {}
+                  - type: str
+                  items:
+                  - 125143001996160:
+                      type: dict
+                      props:
+                        type:
+                        - {}
+                        - type: str
+                        title:
+                        - {}
+                        - type: str
+                        required:
+                        - 125143001891136:
+                            type: list
+                            items:
+                            - {}
+                            - type: str
+                        - type: ref
+                          ref: 125143001891136
+                        properties:
+                        - 125143001995968:
+                            type: dict
+                            props:
+                              root:
+                              - 125143001892544:
+                                  type: dict
+                                  props:
+                                    type:
+                                    - {}
+                                    - type: str
+                                    title:
+                                    - {}
+                                    - type: str
+                                    default:
+                                    - {}
+                                    - type: str
+                                    pattern:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - type
+                                  - title
+                                  - default
+                                  - pattern
+                              - type: ref
+                                ref: 125143001892544
+                              disableBytesTypePromotions:
+                              - 125143001893120:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001893120
+                              strictListInference:
+                              - 125143001893696:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001893696
+                              strictSetInference:
+                              - 125143001894272:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001894272
+                              strictDictionaryInference:
+                              - 125143001894848:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001894848
+                              analyzeUnannotatedFunctions:
+                              - 125143001895424:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001895424
+                              strictParameterNoneValue:
+                              - 125143001896000:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001896000
+                              enableExperimentalFeatures:
+                              - 125143001896576:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001896576
+                              enableTypeIgnoreComments:
+                              - 125143001897152:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001897152
+                              enableReachabilityAnalysis:
+                              - 125143001897728:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001897728
+                              deprecateTypingAliases:
+                              - 125143001898304:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001898304
+                              reportGeneralTypeIssues:
+                              - 125143001898880:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001898880
+                              reportPropertyTypeMismatch:
+                              - 125143001899456:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001899456
+                              reportFunctionMemberAccess:
+                              - 125143001900032:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001900032
+                              reportMissingImports:
+                              - 125143001900608:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001900608
+                              reportMissingModuleSource:
+                              - 125143001901184:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001901184
+                              reportInvalidTypeForm:
+                              - 125143001901760:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001901760
+                              reportMissingTypeStubs:
+                              - 125143001902336:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001902336
+                              reportImportCycles:
+                              - 125143001902912:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001902912
+                              reportUnusedImport:
+                              - 125143001903488:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001903488
+                              reportUnusedClass:
+                              - 125143001904064:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001904064
+                              reportUnusedFunction:
+                              - 125143001904640:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001904640
+                              reportUnusedVariable:
+                              - 125143001905216:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001905216
+                              reportDuplicateImport:
+                              - 125143001905792:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001905792
+                              reportWildcardImportFromLibrary:
+                              - 125143001906368:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001906368
+                              reportAbstractUsage:
+                              - 125143001906944:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001906944
+                              reportArgumentType:
+                              - 125143001923968:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001923968
+                              reportAssertTypeFailure:
+                              - 125143001924544:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001924544
+                              reportAssignmentType:
+                              - 125143001925120:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001925120
+                              reportAttributeAccessIssue:
+                              - 125143001925696:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001925696
+                              reportCallIssue:
+                              - 125143001926272:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001926272
+                              reportInconsistentOverload:
+                              - 125143001926848:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001926848
+                              reportIndexIssue:
+                              - 125143001927424:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001927424
+                              reportInvalidTypeArguments:
+                              - 125143001928000:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001928000
+                              reportNoOverloadImplementation:
+                              - 125143001928576:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001928576
+                              reportOperatorIssue:
+                              - 125143001929152:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001929152
+                              reportOptionalSubscript:
+                              - 125143001929728:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001929728
+                              reportOptionalMemberAccess:
+                              - 125143001930304:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001930304
+                              reportOptionalCall:
+                              - 125143001930880:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001930880
+                              reportOptionalIterable:
+                              - 125143001931456:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001931456
+                              reportOptionalContextManager:
+                              - 125143001932032:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001932032
+                              reportOptionalOperand:
+                              - 125143001932608:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001932608
+                              reportRedeclaration:
+                              - 125143001933184:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001933184
+                              reportReturnType:
+                              - 125143001933760:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001933760
+                              reportTypedDictNotRequiredAccess:
+                              - 125143001934336:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001934336
+                              reportUntypedFunctionDecorator:
+                              - 125143001934912:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001934912
+                              reportUntypedClassDecorator:
+                              - 125143001935488:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001935488
+                              reportUntypedBaseClass:
+                              - 125143001936064:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001936064
+                              reportUntypedNamedTuple:
+                              - 125143001936640:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001936640
+                              reportPrivateUsage:
+                              - 125143001936960:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001936960
+                              reportTypeCommentUsage:
+                              - 125143001937536:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001937536
+                              reportPrivateImportUsage:
+                              - 125143001938112:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001938112
+                              reportConstantRedefinition:
+                              - 125143001938688:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001938688
+                              reportDeprecated:
+                              - 125143001939264:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001939264
+                              reportIncompatibleMethodOverride:
+                              - 125143001939840:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001939840
+                              reportIncompatibleVariableOverride:
+                              - 125143001956864:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001956864
+                              reportInconsistentConstructor:
+                              - 125143001957440:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001957440
+                              reportOverlappingOverload:
+                              - 125143001958016:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001958016
+                              reportPossiblyUnboundVariable:
+                              - 125143001958592:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001958592
+                              reportMissingSuperCall:
+                              - 125143001959168:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001959168
+                              reportUninitializedInstanceVariable:
+                              - 125143001959744:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001959744
+                              reportInvalidStringEscapeSequence:
+                              - 125143001960320:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001960320
+                              reportUnknownParameterType:
+                              - 125143001960896:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001960896
+                              reportUnknownArgumentType:
+                              - 125143001961472:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001961472
+                              reportUnknownLambdaType:
+                              - 125143001962048:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001962048
+                              reportUnknownVariableType:
+                              - 125143001962624:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001962624
+                              reportUnknownMemberType:
+                              - 125143001963200:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001963200
+                              reportMissingParameterType:
+                              - 125143001963776:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001963776
+                              reportMissingTypeArgument:
+                              - 125143001964352:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001964352
+                              reportInvalidTypeVarUse:
+                              - 125143001964928:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001964928
+                              reportCallInDefaultInitializer:
+                              - 125143001965504:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001965504
+                              reportUnnecessaryIsInstance:
+                              - 125143001966080:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001966080
+                              reportUnnecessaryCast:
+                              - 125143001966656:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001966656
+                              reportUnnecessaryComparison:
+                              - 125143001967232:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001967232
+                              reportUnnecessaryContains:
+                              - 125143001967808:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001967808
+                              reportAssertAlwaysTrue:
+                              - 125143001968384:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001968384
+                              reportSelfClsParameterName:
+                              - 125143001968960:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001968960
+                              reportImplicitStringConcatenation:
+                              - 125143001969536:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001969536
+                              reportUnboundVariable:
+                              - 125143001970112:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001970112
+                              reportUnhashable:
+                              - 125143001970688:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001970688
+                              reportUndefinedVariable:
+                              - 125143001971264:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001971264
+                              reportInvalidStubStatement:
+                              - 125143001971840:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001971840
+                              reportIncompleteStub:
+                              - 125143001972416:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001972416
+                              reportUnsupportedDunderAll:
+                              - 125143001989440:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001989440
+                              reportUnusedCallResult:
+                              - 125143001990016:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001990016
+                              reportUnusedCoroutine:
+                              - 125143001990592:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001990592
+                              reportUnusedExcept:
+                              - 125143001991168:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001991168
+                              reportUnusedExpression:
+                              - 125143001991744:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001991744
+                              reportUnnecessaryTypeIgnoreComment:
+                              - 125143001992320:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001992320
+                              reportMatchNotExhaustive:
+                              - 125143001992896:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001992896
+                              reportUnreachable:
+                              - 125143001993472:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001993472
+                              reportImplicitOverride:
+                              - 125143001994048:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001994048
+                              extraPaths:
+                              - 125143001994624:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001994624
+                              pythonVersion:
+                              - 125143001995200:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001995200
+                              pythonPlatform:
+                              - 125143001995776:
+                                  type: dict
+                                  props:
+                                    $ref:
+                                    - {}
+                                    - type: str
+                                  required_keys:
+                                  - $ref
+                              - type: ref
+                                ref: 125143001995776
+                            required_keys:
+                            - root
+                            - disableBytesTypePromotions
+                            - strictListInference
+                            - strictSetInference
+                            - strictDictionaryInference
+                            - analyzeUnannotatedFunctions
+                            - strictParameterNoneValue
+                            - enableExperimentalFeatures
+                            - enableTypeIgnoreComments
+                            - enableReachabilityAnalysis
+                            - deprecateTypingAliases
+                            - reportGeneralTypeIssues
+                            - reportPropertyTypeMismatch
+                            - reportFunctionMemberAccess
+                            - reportMissingImports
+                            - reportMissingModuleSource
+                            - reportInvalidTypeForm
+                            - reportMissingTypeStubs
+                            - reportImportCycles
+                            - reportUnusedImport
+                            - reportUnusedClass
+                            - reportUnusedFunction
+                            - reportUnusedVariable
+                            - reportDuplicateImport
+                            - reportWildcardImportFromLibrary
+                            - reportAbstractUsage
+                            - reportArgumentType
+                            - reportAssertTypeFailure
+                            - reportAssignmentType
+                            - reportAttributeAccessIssue
+                            - reportCallIssue
+                            - reportInconsistentOverload
+                            - reportIndexIssue
+                            - reportInvalidTypeArguments
+                            - reportNoOverloadImplementation
+                            - reportOperatorIssue
+                            - reportOptionalSubscript
+                            - reportOptionalMemberAccess
+                            - reportOptionalCall
+                            - reportOptionalIterable
+                            - reportOptionalContextManager
+                            - reportOptionalOperand
+                            - reportRedeclaration
+                            - reportReturnType
+                            - reportTypedDictNotRequiredAccess
+                            - reportUntypedFunctionDecorator
+                            - reportUntypedClassDecorator
+                            - reportUntypedBaseClass
+                            - reportUntypedNamedTuple
+                            - reportPrivateUsage
+                            - reportTypeCommentUsage
+                            - reportPrivateImportUsage
+                            - reportConstantRedefinition
+                            - reportDeprecated
+                            - reportIncompatibleMethodOverride
+                            - reportIncompatibleVariableOverride
+                            - reportInconsistentConstructor
+                            - reportOverlappingOverload
+                            - reportPossiblyUnboundVariable
+                            - reportMissingSuperCall
+                            - reportUninitializedInstanceVariable
+                            - reportInvalidStringEscapeSequence
+                            - reportUnknownParameterType
+                            - reportUnknownArgumentType
+                            - reportUnknownLambdaType
+                            - reportUnknownVariableType
+                            - reportUnknownMemberType
+                            - reportMissingParameterType
+                            - reportMissingTypeArgument
+                            - reportInvalidTypeVarUse
+                            - reportCallInDefaultInitializer
+                            - reportUnnecessaryIsInstance
+                            - reportUnnecessaryCast
+                            - reportUnnecessaryComparison
+                            - reportUnnecessaryContains
+                            - reportAssertAlwaysTrue
+                            - reportSelfClsParameterName
+                            - reportImplicitStringConcatenation
+                            - reportUnboundVariable
+                            - reportUnhashable
+                            - reportUndefinedVariable
+                            - reportInvalidStubStatement
+                            - reportIncompleteStub
+                            - reportUnsupportedDunderAll
+                            - reportUnusedCallResult
+                            - reportUnusedCoroutine
+                            - reportUnusedExcept
+                            - reportUnusedExpression
+                            - reportUnnecessaryTypeIgnoreComment
+                            - reportMatchNotExhaustive
+                            - reportUnreachable
+                            - reportImplicitOverride
+                            - extraPaths
+                            - pythonVersion
+                            - pythonPlatform
+                        - type: ref
+                          ref: 125143001995968
+                      required_keys:
+                      - type
+                      - title
+                      - required
+                      - properties
+                  - type: ref
+                    ref: 125143001996160
+                required_keys:
+                - type
+                - title
+                - items
+            - type: ref
+              ref: 125143001996352
+          required_keys:
+          - extends
+          - include
+          - exclude
+          - ignore
+          - strict
+          - defineConstant
+          - typeCheckingMode
+          - useLibraryCodeForTypes
+          - typeshedPath
+          - stubPath
+          - disableBytesTypePromotions
+          - strictListInference
+          - strictSetInference
+          - strictDictionaryInference
+          - analyzeUnannotatedFunctions
+          - strictParameterNoneValue
+          - enableExperimentalFeatures
+          - enableTypeIgnoreComments
+          - enableReachabilityAnalysis
+          - deprecateTypingAliases
+          - reportGeneralTypeIssues
+          - reportPropertyTypeMismatch
+          - reportFunctionMemberAccess
+          - reportMissingImports
+          - reportMissingModuleSource
+          - reportInvalidTypeForm
+          - reportMissingTypeStubs
+          - reportImportCycles
+          - reportUnusedImport
+          - reportUnusedClass
+          - reportUnusedFunction
+          - reportUnusedVariable
+          - reportDuplicateImport
+          - reportWildcardImportFromLibrary
+          - reportAbstractUsage
+          - reportArgumentType
+          - reportAssertTypeFailure
+          - reportAssignmentType
+          - reportAttributeAccessIssue
+          - reportCallIssue
+          - reportInconsistentOverload
+          - reportIndexIssue
+          - reportInvalidTypeArguments
+          - reportNoOverloadImplementation
+          - reportOperatorIssue
+          - reportOptionalSubscript
+          - reportOptionalMemberAccess
+          - reportOptionalCall
+          - reportOptionalIterable
+          - reportOptionalContextManager
+          - reportOptionalOperand
+          - reportRedeclaration
+          - reportReturnType
+          - reportTypedDictNotRequiredAccess
+          - reportUntypedFunctionDecorator
+          - reportUntypedClassDecorator
+          - reportUntypedBaseClass
+          - reportUntypedNamedTuple
+          - reportPrivateUsage
+          - reportTypeCommentUsage
+          - reportPrivateImportUsage
+          - reportConstantRedefinition
+          - reportDeprecated
+          - reportIncompatibleMethodOverride
+          - reportIncompatibleVariableOverride
+          - reportInconsistentConstructor
+          - reportOverlappingOverload
+          - reportPossiblyUnboundVariable
+          - reportMissingSuperCall
+          - reportUninitializedInstanceVariable
+          - reportInvalidStringEscapeSequence
+          - reportUnknownParameterType
+          - reportUnknownArgumentType
+          - reportUnknownLambdaType
+          - reportUnknownVariableType
+          - reportUnknownMemberType
+          - reportMissingParameterType
+          - reportMissingTypeArgument
+          - reportInvalidTypeVarUse
+          - reportCallInDefaultInitializer
+          - reportUnnecessaryIsInstance
+          - reportUnnecessaryCast
+          - reportUnnecessaryComparison
+          - reportUnnecessaryContains
+          - reportAssertAlwaysTrue
+          - reportSelfClsParameterName
+          - reportImplicitStringConcatenation
+          - reportUnboundVariable
+          - reportUnhashable
+          - reportUndefinedVariable
+          - reportInvalidStubStatement
+          - reportIncompleteStub
+          - reportUnsupportedDunderAll
+          - reportUnusedCallResult
+          - reportUnusedCoroutine
+          - reportUnusedExcept
+          - reportUnusedExpression
+          - reportUnnecessaryTypeIgnoreComment
+          - reportMatchNotExhaustive
+          - reportUnreachable
+          - reportImplicitOverride
+          - extraPaths
+          - pythonVersion
+          - pythonPlatform
+          - venvPath
+          - venv
+          - verboseOutput
+          - executionEnvironments
+      - type: ref
+        ref: 125143001996544
+    required_keys:
+    - $schema
+    - description
+    - allowComments
+    - allowTrailingCommas
+    - type
+    - definitions
+    - properties
+type: ref
+ref: 125143001996800
+

@@ -1,0 +1,9 @@
+[project]
+name = "gh"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.135.2",
+    "gql[all]>=4.0.0",
+    "hishel[fastapi,httpx]>=1.1.9",
+]

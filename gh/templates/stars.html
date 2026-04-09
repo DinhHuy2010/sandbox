@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.repository.nameWithOwner }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        #stargazers {
+            margin-top: 30px;
+        }
+
+        .stargazer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stargazer img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .stargazer span {
+            font-size: 1.1em;
+            color: #0073e6;
+        }
+
+        textarea {
+            width: 100%;
+            font-family: monospace;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{ data.repository.nameWithOwner }}</h1>
+
+    {% if data.repository.description %}
+    <p><i>{{ data.repository.description }}</i></p>
+    {% endif %}
+
+    <p>
+        Repository Location:
+        <a href="{{ data.repository.url }}">{{ data.repository.url }}</a>
+    </p>
+
+    <div id="stargazers">
+        <h2>Stargazers</h2>
+        <ul>
+            {% for stargazer in data.repository.stargazers.edges %}
+            <li class="stargazer">
+                <img src="{{ stargazer.node.avatarUrl }}" alt="Avatar of {{ stargazer.node.login }}" width="50"
+                    height="50">
+                <span>
+                    <a href="{{ stargazer.node.url }}">{{ stargazer.node.login }}</a>
+                    (since {{ stargazer.starredAt | to_beautiful_datetime }})
+                </span>
+                {% if stargazer.node.bio %}
+                <i>({{ stargazer.node.bio }})</i>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% if include_github_data %}
+    <h2>Raw data from GitHub GraphQL API</h2>
+    <textarea rows="20" cols="80" readonly>{{ data | tojson(indent=2) }}</textarea>
+    {% endif %}
+</body>
+
+</html>
