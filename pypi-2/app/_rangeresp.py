@@ -202,3 +202,54 @@ class HTTPFile(io.RawIOBase):
             buffer_size = self.chunk_size
 
         return io.BufferedReader(self, buffer_size=self.chunk_size)
+
+
+# exprimental
+@dataclass
+class NonSeekableHTTPFile(io.RawIOBase):
+    url: str
+    client: httpx.Client = field(default_factory=httpx.Client)
+    _response: httpx.Response = field(init=False)
+    _buf: bytearray = field(init=False, default_factory=bytearray)
+
+    def read(self, size=-1):
+        if not hasattr(self, "_response"):
+            request = self.client.build_request("GET", self.url)
+            self._response = self.client.send(request, stream=True)
+            self._response.raise_for_status()
+            self._iter = self._response.iter_bytes()
+
+        while size < 0 or len(self._buf) < size:
+            try:
+                chunk = next(self._iter)
+                self._buf.extend(chunk)
+            except StopIteration:
+                break
+
+        if size < 0:
+            size = len(self._buf)
+
+        data = bytes(self._buf[:size])
+        del self._buf[:size]
+        return data
+
+    def readable(self) -> bool:
+        return True
+
+    def readinto(self, buffer):
+        mv = memoryview(buffer)
+        data = self.read(len(mv))
+        mv[: len(data)] = data
+        return len(data)
+
+    def close(self):
+        if hasattr(self, "_response"):
+            self._response.close()
+        self.client.close()
+        super().close()
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.close()

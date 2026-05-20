@@ -1,0 +1,62 @@
+install_file_version "1.0"
+
+metadata {
+    name: {
+        human: "Python 3.13",
+        package: "python-3.13"
+    }
+    description: "Python runtime"
+    version: "3.13.0"
+}
+
+depends {
+    fs
+    env
+    http
+    archive
+}
+
+variables {
+    dist_dir = {{$package_dir}} + "/dist"
+    source_uri = "gcs://installfile-packages/package/python-3.13/files/source.tar.gz"
+}
+
+pipeline {
+    step download {
+        output = http.download {
+            uri: $source_uri
+            checksum: "sha256:xxxx"
+        }
+    }
+
+    step extract {
+        input = download.output
+        output = archive.targz.extract { src: input }
+    }
+
+    step install {
+        input = extract.output
+        fs.copy {
+            src: input
+            dst: $dist_dir
+        }
+    }
+
+    step register {
+        env.addPath {
+            path: $dist_dir
+        }
+    }
+}
+
+on_success {
+    log "Python installed successfully"
+    cleanup
+    checkpoints.saveAll
+}
+
+on_failure {
+    error { message: "Failed to install Python" }
+    revert step
+    checkpoints.restore
+}

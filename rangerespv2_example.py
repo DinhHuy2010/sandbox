@@ -51,8 +51,8 @@ def _test():
     )
     with ZipFile(fp.buffered()) as zip_file:
         p = Path(zip_file)
-        dist = PathDistribution(p)
-        print(dist)
+        dist = PathDistribution(next(p.glob("*.dist-info")))
+        print(dist.metadata["License"])
 
 
 def _geonames_example():
@@ -99,4 +99,5 @@ def _geonames_example():
 
 
 if __name__ == "__main__":
-    _geonames_example()
+    _test()
+    # _geonames_example()

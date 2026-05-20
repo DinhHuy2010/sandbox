@@ -1,0 +1,106 @@
+on("user.input.ask" caused by "user.main", text) => {
+    cases text => {
+        where string.compare(string.lower(text), "yes") => {
+            return forward_emit("user.ok")
+        }
+        where string.compare(string.lower(text), "no") => {
+            return forward_emit("user.no")
+        }
+        where _ => {
+            return forward_emit("user.input.invalid")
+        }
+    }
+}
+
+on("user.input.invalid" caused by "user.input.ask") => {
+    emit("core.print", "Not a valid input!")
+    return forward_emit("user.main")
+}
+
+on("user.ok" caused by "user.input.ask") => {
+    emit("core.print", "OK!")
+    return forward_emit("user.continue")
+}
+
+on("user.no" caused by "user.input.ask") => {
+    emit("core.print", "nope")
+    emit("core.exit", 1)
+}
+
+# anything starts with # is a comment
+# user.input.ask -> user.no -> core.exit -> MATCH!
+# manual emit("user.no") -> no match
+on("core.exit" caused by ("user.no", "user.input.ask")) => {
+    # Perform cleanup here
+}
+
+on("user.main") => {
+    # pipe all output from input function to events
+    # function<event_to_send>
+    next_emit = user.input<'user.input.ask'>("OK? (Yes/No): ")
+    # emit("event_name", [args...])
+    # emit(<forward_emit>)
+    emit(next_emit)
+}
+
+on("user.continue") => {
+    emit("core.print", "Hello, world!")
+    # call can return values
+    # handlers can be also be functions and be return, too!
+    arr = [call("core.add", 1, 1), call("core.bool", "true")]
+    emit("core.print", call("core.format", arr))
+    emit("core.print", call("user.my.namespace.helloworld"))
+    emit("user.my.namespace.helloworld")
+    # Either both way are INTENTIONAL.
+
+    emit("core.exit", 0)
+}
+
+on("user.my.namespace.helloworld" caused by "core.call") => {
+    emit("core.print", "Hello, world!")
+    # no return means return null
+    # return can be anything, even forward_emit()
+    # emit -> return nothing
+    # call -> return from handlers
+    return "Return value here!"
+}
+on("user.my.namespace.helloworld") => {
+    return "This will not be returned!"
+}
+# If have one handler -> use
+# else if EXTACTLY one handler have
+# on(<event name> caused by "core.call") => {...}
+# And only once, then use it, else error
+
+on("core.startup") => {
+    emit("user.main")
+}
+
+# forward_emit is same for emit() but return an "forward emit" state and use emit() to emit the event
+# Also no queue to simplify things
+
+# with external packages
+
+# example using github
+
+on("user.github.on_repo", repo) => {
+    emit("core.print", repo.name)
+    repo.user<'user.github.on_user'>()
+    # loop first 30 issues
+    repo.issues<'user.github.on_issue'>({first: 30})
+}
+
+on("user.github.on_user", user) => {}
+on("user.github.on_issue", user) => {}
+
+on("user.main") => {
+    client = call("github.client.new")
+    # current user
+    client.viewer<'user.github.on_user'>()
+    # get a repo
+    client.repo<'user.github.on_repo'>("user/repo")
+}
+
+on("core.starup") => {
+    external.use<"user.main">("github")
+}

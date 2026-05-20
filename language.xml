@@ -1,0 +1,44 @@
+<app name="MyApp" version="1.0" xmlns:xmlhttp="core://http" xmlns:sql="core://sql">
+    <echo>Hello, world!</echo>
+    <variable name="example" value="123" dtype="int" />
+    <echo>Hello, {{example}}</echo>
+    <!-- Asking input -->
+    <input name="user_input" prompt="Please enter something:" />
+    <echo>You entered: {{user_input}}</echo>
+    <!-- Functions -->
+    <function name="greet" params="name">
+        <echo>Hello, {{name}}!</echo>
+    </function>
+    <call function="greet" args="Alice" />
+    <xmlhttp:webapp name="MyWebApp" port="8080">
+        <xmlhttp:route path="/" method="GET">
+            <xmlhttp:response content-type="text/html" status="200">
+                <echo>Welcome to MyWebApp!</echo>
+            </xmlhttp:response>
+        </xmlhttp:route>
+        <xmlhttp:router prefix="/api/v1">
+            <xmlhttp:route path="/data" method="GET">
+                <xmlhttp:response content-type="application/json" status="200">
+                    <echo>{"message": "This is some data."}</echo>
+                </xmlhttp:response>
+            </xmlhttp:route>
+            <xmlhttp:route path="/db/pull" method="POST">
+                <xmlhttp:handler>
+                    <!-- {{request.<something>}} -->
+                    <echo>Pulling data from the database...</echo>
+                    <sql:connection name="db" host="localhost" port="5432" database="mydb"
+                        user="user" password="pass">
+                        <sql:query name="get_data" sql="SELECT * FROM my_table;" when_error_goto="error"/>
+                    </sql:connection>
+                    <xmlhttp:response>
+                        <xmlhttp:jsonify>{{get_data}}</xmlhttp:jsonify>
+                    </xmlhttp:response>
+                </xmlhttp:handler>
+            </xmlhttp:route>
+        </xmlhttp:router>
+    </xmlhttp:webapp>
+    <goto name="error">
+        <echo>An error occurred while processing your request.</echo>
+        <exit status="0"/>
+    </goto>
+</app>

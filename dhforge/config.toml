@@ -1,0 +1,3 @@
+[repositories]
+index-file = "repositories/index.json"
+repositories-base-dir = "repositories"
