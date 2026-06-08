@@ -41,3 +41,5 @@ Thumbs.db
 temp/
 
 **/.env
+
+.cache/

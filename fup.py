@@ -6,6 +6,7 @@ from pathlib import Path
 from shutil import rmtree
 
 from faker import Faker
+from tqdm import tqdm
 
 path = Path("./temp/test-repo.git")
 faker = Faker()
@@ -95,11 +96,11 @@ def create_ref(ref_name: str, commit_hash: str) -> None:
         f.write(commit_hash + "\n")
 
 
-def build_tree(depth: int = 5) -> str:
+def build_tree(depth: int = 3) -> str:
     entries = []
-    nblobs = faker.random_int(min=5, max=15)
-    ntrees = faker.random_int(min=0, max=5) if depth > 0 else 0
-    print(f"Building tree at depth {depth} with {nblobs} blobs and {ntrees} subtrees")
+    nblobs = faker.random_int(min=5, max=5)
+    ntrees = faker.random_int(min=0, max=2) if depth > 0 else 0
+    # print(f"Building tree at depth {depth} with {nblobs} blobs and {ntrees} subtrees")
     for _ in range(nblobs):
         blob_content = faker.text().encode()
         blob_hash = write_object("blob", blob_content)
@@ -110,7 +111,7 @@ def build_tree(depth: int = 5) -> str:
 
     tree_content = create_tree(entries)
     p = write_object("tree", tree_content)
-    print(f"Created tree at {p}")
+    # print(f"Created tree at {p}")
     return p
 
 
@@ -119,11 +120,29 @@ if path.exists():
     rmtree(path, ignore_errors=True)
 git("-c", "init.defaultBranch=main", "init", "--bare", str(path))
 
-tree = build_tree()
-commit_content = create_commit(tree, None, "Initial commit", faker.name())
-commit_hash = write_object("commit", commit_content)
-print(f"Created commit at {commit_hash}")
-create_ref("heads/main", commit_hash)
-print(f"Created ref heads/main pointing to {commit_hash}")
-print("Repository setup complete.")
+parent_commit = None
+commits: list[str] = []
 
+for _ in tqdm(range(10**3)):  # Create a few commits to have some history
+    tree = build_tree()
+    commit_content = create_commit(
+        tree, parent_commit, faker.paragraph(), f"{faker.name()} <{faker.email()}>"
+    )
+    commit_hash = write_object("commit", commit_content)
+    create_ref("heads/main", commit_hash)
+    # print(f"Created ref heads/main pointing to {commit_hash}")
+    # print(f"Created commit at {commit_hash}")
+    parent_commit = commit_hash
+    commits.append(commit_hash)
+
+for _ in tqdm(range(10**3)):  # Create some tags pointing to random commits
+    target_commit = faker.random_element(elements=commits)
+    tag_content = f"object {target_commit}\ntype commit\ntag {faker.word()}\ntagger {faker.name()} <{faker.email()}> {int(datetime.now().timestamp())} +0000\n\n{faker.sentence()}\n".encode()
+    tag_hash = write_object("tag", tag_content)
+    create_ref(f"refs/tags/{faker.word()}", tag_hash)
+
+for _ in tqdm(range(10**3)):  # Create some branches pointing to random commits
+    target_commit = faker.random_element(elements=commits)
+    create_ref(f"refs/heads/{faker.word()}", target_commit)
+
+print("Repository setup complete.")

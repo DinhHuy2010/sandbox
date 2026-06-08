@@ -1,0 +1,32 @@
+reactive "0.0.1"
+depends {
+    /core/io:io
+    /core/events#wait:wait
+    /core/events#while:while
+    /core/time/ticks:ticks
+}
+
+when_print_finished {
+    wait(io:println("Printing finished!"))
+}
+
+main {
+    event = io:println("Hello world!")
+    # Wait until "Hello, world!" is printed
+    wait(event, { when_print_finished })
+    # or...
+    wait(io:println("Hello, world!"))
+
+    input_event = io:input("What is your name? ")
+    wait(input_event, { _ {
+        wait(io:println("Hello", input_event.value))
+    } })
+    # or...
+    input_event = io:input("What is your age? ")
+    tick_event = ticks:tick_atomic()
+    while(input_event, { _ {
+        nticks = tick_event:ticks()
+        tick_in_ms = tick_event:ticks():ms()
+        wait(io:println(nticks, tick_in_ms))
+    }})
+}

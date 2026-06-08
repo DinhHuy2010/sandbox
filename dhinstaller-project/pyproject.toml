@@ -1,0 +1,56 @@
+[project]
+name = "dhinstaller"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "aria2p>=0.12.1",
+    "attrs>=25.4.0",
+    "installer>=1.0.1",
+    "packaging>=26.0",
+    "rich>=14.3.3",
+    "simple-repository>=0.11.1",
+]
+
+[tool.pyright]
+typeCheckingMode = "standard"
+
+[tool.ruff]
+# Target Python version
+target-version = "py310"
+
+# Set the maximum line length
+line-length = 88
+
+
+# List of rule codes to enable
+select = [
+    "F",  # Pyflakes (Standard errors)
+    "E",
+    "W",  # Pycodestyle (Standard errors & warnings)
+    "I",  # Isort (Auto-sort imports)
+    "B",  # Flake8-bugbear (Common design bugs/gotchas)
+    "UP", # Pyupgrade (Upgrades syntax to modern Python)
+
+    # --- YOUR SPECIFIC REQUIREMENTS ---
+    "PTH", # Flake8-use-pathlib (Enforces always using pathlib instead of os.path)
+    "FA",  # Flake8-future-annotations (Forces `from __future__ import annotations`)
+    "D",   # Pydocstyle (Enforces strict docstring compliance)
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Ignore specific rules in the tests directory
+"tests/*" = ["D", "I002"]
+
+[tool.ruff.lint.pydocstyle]
+# Enforces numpy-style docstrings (options: "google", "numpy", "pep257")
+convention = "numpy"
+
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.11.0",
+    "pytest>=9.0.3",
+]

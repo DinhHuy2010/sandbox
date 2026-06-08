@@ -1,0 +1,20 @@
+uvx --from datamodel-code-generator[http] datamodel-codegen \
+  --url https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/api.github.com/api.github.com.json \
+  --input-file-type openapi \
+  --output-model-type pydantic_v2.BaseModel \
+  --output github_models.py \
+  --target-python-version 3.10 \
+  --use-union-operator \
+  --use-standard-collections \
+  --use-annotated \
+  --field-constraints \
+  --enum-field-as-literal all \
+  --use-title-as-name \
+  --use-schema-description \
+  --use-generic-base-class \
+  --naming-strategy full-path \
+  --use-field-description \
+  --use-field-description-example \
+  --use-inline-field-description \
+  --reuse-model \
+  --collapse-reuse-models
