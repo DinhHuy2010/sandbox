@@ -23,6 +23,7 @@ dependencies = [
     "libcst>=1.8.6",
     "logfire[fastapi]>=4.33.0",
     "lxml>=6.0.2",
+    "magika>=1.0.3",
     "markdown-it-py[linkify,plugins]>=4.0.0",
     "markdownmaker>=0.4.0",
     "more-itertools>=10.8.0",
@@ -39,6 +40,7 @@ dependencies = [
     "pypi-simple>=1.8.0",
     "pyyaml>=6.0.3",
     "requests>=2.32.5",
+    "scandir-rs>=2.9.9",
     "simple-repository>=0.11.1",
     "simple-repository-server>=0.10.0",
     "snakemd>=2.4.0",
@@ -69,6 +71,10 @@ members = [
     "git-stuff",
     "dhinstaller-project",
     "okwhatever3",
+    "object-repo",
+    "objects-repo",
+    "fuse-project",
+    "json-schema-project",
 ]
 
 [tool.uv.sources]

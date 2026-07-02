@@ -1,0 +1,47 @@
+main = builtins.mkBlueprint {
+    inputs = {
+        services.io.enable = true;
+    };
+    outputs = {io, ...}: {
+        let
+            message = "Hello, World!";
+        in
+            io.stdout.write message;
+    };
+}
+hello_package = builtins.mkPackage {
+    meta = {
+        name = "hello";
+        description = "A simple hello world package";
+        version = "1.0.0";
+    }
+    inputs = {
+        services.http.enable = true;
+        services.http.client = {
+            enable = true;
+            proxy = "http://localhost:8080";
+            backend = http.client.backends.wget;
+        };
+        services.build = {
+            enable = true;
+            components = [services.build.components.cargo];
+        };
+    };
+    outputs = {http, build, ...}: {
+        let
+            url = "https://example.com/hello-package.tar.gz";
+            filename = "hello-package.tar.gz";
+        in
+            path = http.downloadFile {inherit url; output = filename;};
+            output = build.cargo.build {
+                src = path;
+                output = "hello-package";
+            };
+            output;
+    };
+};
+# This is a comment
+# Run
+# $ blueprint run hello.blueprint#main
+# To build the package
+# $ blueprint build hello.blueprint#hello_package

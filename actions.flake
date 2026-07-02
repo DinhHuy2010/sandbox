@@ -1,0 +1,39 @@
+{
+    description = "My Workflow";
+    inputs = {
+        libcicd = {
+            url = "github:libcicd/libcicd/26.04.1";
+        };
+    };
+    outputs = {libcicd, ...}: 
+        let
+            jobs = [
+                {
+                    name = "Test";
+                    steps = [
+                        {
+                            name = "Checkout code";
+                            body = context: {
+                                context.run "git clone {{context.inputs.environment.REPO_URL}}";
+                            };
+                        }
+                        {
+                            name = "Run tests";
+                            body = context: {
+                                context.run "echo Running tests...";
+                                context.run "echo Tests completed!";
+                            };
+                        }
+                    ];
+                }
+            ];
+        in
+            {
+                workflow = libcicd.workflow {
+                    name = "my-workflow";
+                    inherit jobs;
+            }
+    };
+}
+# Run this workflow with:
+# REPO_URL=<your-repo-url> flake run .#workflow

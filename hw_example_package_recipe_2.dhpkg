@@ -1,0 +1,21 @@
+setup (
+	name "hello-world"
+	version 1.0
+	description null
+	recipe bash```
+		pwd # /tmp/dhpkg-<session>/<package uuid>
+		wget https://example.com/hello-world-package.zip
+		# Evaluate the package, download and install, and use unzip
+		{<context>/packages/preloaded/zip/binaries/unzip>} hello-world-package.zip -d {context/packages/store/<self>/}
+		dhpkg-utils expose-path <context/packages/store/<self>/binaries/hello>
+	```
+)
+setup (
+	name "big_webapp"
+	version 0.1
+	description null
+	recipe python```
+		directory = dhpkgutils.python.lib.pathlib.Path("/path/to/webapp")
+		print(directory)
+	```
+)

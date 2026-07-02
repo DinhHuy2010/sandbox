@@ -1,0 +1,12 @@
+package (
+	name "hello-world"
+	description <null>
+	packages_bundled <dhpkg/python/3.14> # Bundle Python 3.14
+	build (
+		# . -> <root>/store/packages/<hash>
+		# <packages/NAME> -> <root>/store/packages/<hash>
+		download <dhpkg-sources/github/dhpkg/hello-world-script> ./hw-main.py
+		generate_shell_file python3 <packages/python/3.14> ./hw-main.py hello
+		expose hello
+	)
+)
