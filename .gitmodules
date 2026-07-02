@@ -1,3 +1,6 @@
 [submodule "okwhatever3"]
 	path = okwhatever3
 	url = https://github.com/DinhHuy2010/okwhatever3.git
+[submodule "json-schema-project/jsonschema-official-testsuite"]
+	path = json-schema-project/jsonschema-official-testsuite
+	url = https://github.com/json-schema-org/JSON-Schema-Test-Suite.git
