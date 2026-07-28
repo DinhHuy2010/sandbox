@@ -1,5 +1,5 @@
 
-from simplehttp import (
+from python.lib.simplehttp import (
     InheritableDependency,
     Router,
     Request,
@@ -85,7 +85,7 @@ class Application(Router):
 
 
 if __name__ == "__main__":
-    from simplehttp import Server
+    from python.lib.simplehttp import Server
     from werkzeug.serving import run_simple
 
     server = Server(

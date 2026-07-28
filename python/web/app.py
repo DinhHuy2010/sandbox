@@ -4,7 +4,7 @@ from starlette.requests import Request
 from starlette.responses import JSONResponse, PlainTextResponse, Response
 from starlette.routing import Route
 
-from shared import ContentTypeMiddleware, templates
+from python.lib.shared import ContentTypeMiddleware, templates
 
 APPS = {
     "/wikidata": "wikidata:app",

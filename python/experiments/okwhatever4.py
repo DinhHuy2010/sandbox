@@ -1,7 +1,7 @@
 import random
 
-from okwhatever3 import LoopContinue as c
-from okwhatever3 import (
+from python.lib.okwhatever3 import LoopContinue as c
+from python.lib.okwhatever3 import (
     complex_cond as cc,
     error as e,
     meanwhile as w,

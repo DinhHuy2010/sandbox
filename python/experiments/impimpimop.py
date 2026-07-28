@@ -18,7 +18,7 @@ from packaging.utils import parse_wheel_filename
 from packaging.version import Version
 from pypi_simple import DistributionPackage, PyPISimple
 
-from rangerespv2 import HTTPFile
+from python.lib.rangerespv2 import HTTPFile
 
 SYS_TAGS_ORDERED = tuple(sys_tags())
 SYS_TAG_RANK = {tag: i for i, tag in enumerate(SYS_TAGS_ORDERED)}

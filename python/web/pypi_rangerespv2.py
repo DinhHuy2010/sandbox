@@ -9,7 +9,7 @@ from packaging.version import Version
 from simple_repository.components.http_cached import CachedHttpRepository
 from simple_repository.model import File
 
-from rangerespv2 import HTTPFile
+from python.lib.rangerespv2 import HTTPFile
 
 
 SYS_TAGS_ORDERED = tuple(sys_tags())

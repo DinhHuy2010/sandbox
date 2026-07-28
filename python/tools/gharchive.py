@@ -5,8 +5,8 @@ import json
 from typing import TYPE_CHECKING, Any, Generator
 from attrs import define, field
 
-from breader import BReader
-import github_rest_api_models
+from python.lib.breader import BReader
+from python.lib import github_rest_api_models
 
 if TYPE_CHECKING:
     from httpx import Client

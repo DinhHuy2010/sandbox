@@ -4,7 +4,7 @@ from starlette.requests import Request
 from starlette.responses import Response
 from starlette.middleware import Middleware
 
-from shared import ContentTypeMiddleware, templates
+from python.lib.shared import ContentTypeMiddleware, templates
 
 
 async def homepage(request: Request) -> Response:

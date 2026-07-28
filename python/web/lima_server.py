@@ -1,4 +1,4 @@
-from okwhatever3 import imports, asyncize
+from python.lib.okwhatever3 import imports, asyncize
 
 imports.uvicorn.run(
     imports["starlette.applications"].Starlette(

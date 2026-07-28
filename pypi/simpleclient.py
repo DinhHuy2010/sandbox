@@ -7,7 +7,7 @@ from hishel import CacheOptions, SpecificationPolicy, SyncSqliteStorage
 from hishel.httpx import SyncCacheTransport
 from lxml import etree
 
-from breader import BReader
+from python.lib.breader import BReader
 from package_filenames import parse_filename
 from pep691_models import (
     File,

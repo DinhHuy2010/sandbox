@@ -5,7 +5,7 @@ from starlette.requests import Request
 from starlette.responses import FileResponse, JSONResponse, Response
 from starlette.routing import Route
 
-from build_gibbrish_openapi import build_gibberish_openapi
+from python.lib.build_gibbrish_openapi import build_gibberish_openapi
 
 lolmao = build_gibberish_openapi()
 

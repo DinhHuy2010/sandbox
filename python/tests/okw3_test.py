@@ -2,7 +2,7 @@ import asyncio
 
 import pytest
 
-import okwhatever3_compressed_x2 as okw
+from python.lib import okwhatever3_compressed_x2 as okw
 
 
 def test_evaluate_execute_and_compile_helpers():

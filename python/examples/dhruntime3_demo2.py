@@ -1,4 +1,4 @@
-import dhruntime3
+from python.lib import dhruntime3
 
 runtime = dhruntime3.Runtime()
 

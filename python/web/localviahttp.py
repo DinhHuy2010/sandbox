@@ -12,7 +12,7 @@ from attrs import define, field
 from pydantic import JsonValue
 import pydantic
 
-from pydantic_attrs import validate_via_pydantic
+from python.lib.pydantic_attrs import validate_via_pydantic
 
 type EventHandler[_RuntimeT: "BaseRuntime"] = Callable[
     Concatenate[_RuntimeT, ...], JsonValue | ForwardEmit[_RuntimeT] | None

@@ -7,7 +7,7 @@ from zipfile import Path, ZipFile
 
 import httpx
 
-from rangerespv2 import HTTPFile, LRUMapping
+from python.lib.rangerespv2 import HTTPFile, LRUMapping
 
 
 def print_http_request(request: httpx.Request):

@@ -1,4 +1,4 @@
-from dhruntime3 import Runtime, JsonValue, MiddlewareState, NextMiddleware, AsyncRuntime
+from python.lib.dhruntime3 import Runtime, JsonValue, MiddlewareState, NextMiddleware, AsyncRuntime
 from tqdm import tqdm
 from concurrent.futures import Future, wait
 

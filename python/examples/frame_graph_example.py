@@ -47,7 +47,7 @@ def a():
 
 sys.settrace(tracer)
 # a()
-import smart_cast
+from python.lib import smart_cast
 smart_cast.cast(int, "10")  # Call the function to generate the call graph
 sys.settrace(None)
 

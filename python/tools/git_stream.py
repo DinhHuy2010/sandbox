@@ -5,7 +5,7 @@ from dulwich import pack
 from dulwich.object_format import SHA1, SHA256, ObjectFormat
 import httpx
 
-from breader import BReader
+from python.lib.breader import BReader
 
 
 @dataclass

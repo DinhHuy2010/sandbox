@@ -6,7 +6,7 @@ from hishel import CacheOptions, SpecificationPolicy, SyncSqliteStorage
 from hishel.httpx import SyncCacheTransport
 from httpx import Client, HTTPTransport, Request, Response
 
-from rangeresp import open_http
+from python.lib.rangeresp import open_http
 
 
 def print_request_as_http_message(request: Request):

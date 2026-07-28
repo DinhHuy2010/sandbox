@@ -8,7 +8,7 @@ import httpx
 from lxml.etree import iterparse
 from urllib.robotparser import RobotFileParser
 
-from breader import BReader
+from python.lib.breader import BReader
 
 USER_AGENT = "Googlebot/2.1 (+http://www.google.com/bot.html)"
 ROBOTS_TXT = "https://learn.microsoft.com/robots.txt"
