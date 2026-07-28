@@ -1,0 +1,105 @@
+Services {
+    DatabaseService {
+        serviceType = "database"
+        backendProvider = makeConfig {
+            optionType: "literal"
+            choices: ["postgres" "mysql" "mariadb" "sqlite"]
+            section: "database"
+            key: "provider"
+        }
+        users = makeDatabaseTable {
+            name = "users"
+            schema = makeDatabaseTableSchema {
+                fields = [
+                    makeDatabaseTableField {
+                        name = "id"
+                        type = "integer"
+                        primaryKey = true
+                        autoIncrement = true
+                    }
+                    makeDatabaseTableField {
+                        name = "username"
+                        type = "string"
+                        unique = true
+                    }
+                    makeDatabaseTableField {
+                        name = "email"
+                        type = "string"
+                        unique = true
+                    }
+                    makeDatabaseTableField {
+                        name = "password_hash"
+                        type = "string"
+                    }
+                ]
+            }
+        }
+        createUser = makeFunction {
+            name = "createUser"
+            description = "Creates a new user in the database."
+            body = [
+                makeFunctionCall {
+                    function = users.insertValues
+                    parameters = makeObject {
+                        username = ContextAPI.self.parameters.username
+                        email = ContextAPI.self.parameters.email
+                        password_hash = ContextAPI.self.parameters.password_hash
+                    }
+                }
+            ]
+        }
+    }
+    WebService {
+        serviceType = "web"
+        host = "127.0.0.1"
+        port = 8080
+        routes = [
+            makeRoute {
+                path = "/users"
+                method = "POST"
+                handler = makeFunction {
+                    body = [
+                        makeFunctionCall {
+                            function = DatabaseService.createUser
+                            parameters = makeObject {
+                                username = ContextAPI.self.request.body.username
+                                email = ContextAPI.self.request.body.email
+                                password_hash = makeFunctionCall {
+                                    function = hashPassword
+                                    parameters = makeObject {
+                                        password = ContextAPI.self.request.body.password
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+    NumberService {
+        serviceType = "generic"
+        addNumber = makeFunction {
+            name = "addNumber"
+            description = "Adds two numbers and returns the result."
+            body = [
+                makeFunctionCall {
+                    function = ContextAPI.builtIn.add
+                    parameters = makeObject {
+                        a = ContextAPI.self.parameters.a
+                        b = ContextAPI.self.parameters.b
+                    }
+                }
+            ]
+        }
+        getRandomNumber = makeFunction {
+            name = "getRandomNumber"
+            description = "Returns a random number between 0 and 1."
+            body = [
+                makeFunctionCall {
+                    function = ContextAPI.builtIn.random
+                }
+            ]
+        }
+    }
+}

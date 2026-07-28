@@ -1,0 +1,27 @@
+{
+    description = null;
+    requires = {
+        wikidata = {
+            uri = "flake:libwikibase@flakes-index.wikimedia.org";
+        };
+    };
+    body = {wikidata, ...}:
+    let
+        wd = wikidata.Instance {
+            base_uri = "https://www.wikidata.org";
+            user_agent = "MyApp/1.0 (https://example.com)";
+            sparql_endpoint = "https://query.wikidata.org/sparql";
+        };
+    in
+        // wd.query-service.query {
+        //     query = ''
+        //         SELECT ?item ?itemLabel
+        //         WHERE {
+        //             ?item wdt:P31 wd:Q146 .
+        //             SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+        //         }
+        //         LIMIT 10
+        //     '';
+        // };
+        [wd.items.Q42.labels.en, wd.items.Q42.statements.P31]
+}

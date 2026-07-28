@@ -43,3 +43,6 @@ temp/
 **/.env
 
 .cache/
+
+**/*.bundle
+

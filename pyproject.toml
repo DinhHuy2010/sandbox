@@ -16,6 +16,7 @@ dependencies = [
     "fsspec[http]>=2026.4.0",
     "httpx-sse>=0.4.3",
     "httpx[http2]>=0.28.1",
+    "icalendar",
     "ipython>=9.11.0",
     "jinja2>=3.1.6",
     "json-stream>=2.4.1",
@@ -38,6 +39,7 @@ dependencies = [
     "pyinterpeter",
     "pyjwt>=2.13.0",
     "pypi-simple>=1.8.0",
+    "python-dotenv>=1.2.2",
     "pyyaml>=6.0.3",
     "requests>=2.32.5",
     "scandir-rs>=2.9.9",
@@ -75,6 +77,7 @@ members = [
     "objects-repo",
     "fuse-project",
     "json-schema-project",
+    "funny",
 ]
 
 [tool.uv.sources]
