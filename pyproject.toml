@@ -78,6 +78,7 @@ members = [
     "fuse-project",
     "json-schema-project",
     "funny",
+    "code-search",
 ]
 
 [tool.uv.sources]
