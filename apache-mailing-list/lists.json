@@ -1,0 +1,2553 @@
+{
+  "infra.apache.org": [
+    "issues@infra.apache.org",
+    "devnull@infra.apache.org",
+    "gnomes@infra.apache.org",
+    "hadoop-migrations@infra.apache.org",
+    "ghactions@infra.apache.org",
+    "artifacts@infra.apache.org",
+    "testlist1@infra.apache.org"
+  ],
+  "apache.org": [
+    "site-dev@apache.org",
+    "apachecon-discuss@apache.org",
+    "infrastructure-dev@apache.org",
+    "legal-discuss@apache.org",
+    "apache-bugdb@apache.org",
+    "announce@apache.org",
+    "builds@apache.org",
+    "community@apache.org",
+    "repository@apache.org",
+    "mirrors@apache.org",
+    "jcp-open@apache.org",
+    "repository-commits@apache.org",
+    "modproxy-dev@apache.org",
+    "diversity@apache.org",
+    "privacy-commits@apache.org",
+    "gui-dev@apache.org",
+    "women@apache.org",
+    "feathercast@apache.org",
+    "geospatial@apache.org",
+    "license@apache.org",
+    "small-events-discuss@apache.org",
+    "iot@apache.org",
+    "release-discuss@apache.org",
+    "retreats@apache.org",
+    "privacy-discuss@apache.org",
+    "history@apache.org",
+    "marketing@apache.org"
+  ],
+  "ws.apache.org": [
+    "axis-tck@ws.apache.org",
+    "axis-cvs@ws.apache.org",
+    "dev@ws.apache.org",
+    "soap-user@ws.apache.org",
+    "commits@ws.apache.org",
+    "fx-dev@ws.apache.org",
+    "commons-dev@ws.apache.org",
+    "rampart-dev@ws.apache.org",
+    "sandesha-dev@ws.apache.org",
+    "woden-dev@ws.apache.org",
+    "soap-dev@ws.apache.org",
+    "wss4j-dev@ws.apache.org",
+    "xmlrpc-dev@ws.apache.org",
+    "kandula-dev@ws.apache.org",
+    "muse-dev@ws.apache.org",
+    "jaxme-dev@ws.apache.org",
+    "savan-dev@ws.apache.org",
+    "users@ws.apache.org",
+    "muse-user@ws.apache.org",
+    "wsrf-dev@ws.apache.org",
+    "scout-dev@ws.apache.org",
+    "wsif-user@ws.apache.org",
+    "rampart-c-dev@ws.apache.org",
+    "muse-commits@ws.apache.org",
+    "wsif-dev@ws.apache.org",
+    "xmlrpc-auto@ws.apache.org",
+    "pubscribe-dev@ws.apache.org",
+    "wsrf-commits@ws.apache.org",
+    "mirae-dev@ws.apache.org",
+    "tsik-dev@ws.apache.org",
+    "pubscribe-commits@ws.apache.org",
+    "wsrf-user@ws.apache.org",
+    "pubscribe-user@ws.apache.org",
+    "addressing-dev@ws.apache.org",
+    "ews-dev@ws.apache.org",
+    "announce@ws.apache.org",
+    "mirae-user@ws.apache.org",
+    "fx-user@ws.apache.org"
+  ],
+  "apachecon.com": [
+    "announce@apachecon.com",
+    "discuss@apachecon.com",
+    "attendees@apachecon.com",
+    "attendees-eu-2000@apachecon.com",
+    "attendees-2005-us@apachecon.com"
+  ],
+  "spark.apache.org": [
+    "reviews@spark.apache.org",
+    "issues@spark.apache.org",
+    "commits@spark.apache.org",
+    "user@spark.apache.org",
+    "dev@spark.apache.org"
+  ],
+  "flink.apache.org": [
+    "issues@flink.apache.org",
+    "dev@flink.apache.org",
+    "commits@flink.apache.org",
+    "user@flink.apache.org",
+    "builds@flink.apache.org",
+    "user-zh@flink.apache.org",
+    "community@flink.apache.org",
+    "news@flink.apache.org"
+  ],
+  "doris.apache.org": [
+    "commits@doris.apache.org",
+    "dev@doris.apache.org"
+  ],
+  "airflow.apache.org": [
+    "commits@airflow.apache.org",
+    "jobs@airflow.apache.org",
+    "dev@airflow.apache.org",
+    "users@airflow.apache.org"
+  ],
+  "hbase.apache.org": [
+    "issues@hbase.apache.org",
+    "commits@hbase.apache.org",
+    "dev@hbase.apache.org",
+    "user@hbase.apache.org",
+    "builds@hbase.apache.org",
+    "user-zh@hbase.apache.org"
+  ],
+  "camel.apache.org": [
+    "commits@camel.apache.org",
+    "issues@camel.apache.org",
+    "users@camel.apache.org",
+    "dev@camel.apache.org"
+  ],
+  "arrow.apache.org": [
+    "github@arrow.apache.org",
+    "issues@arrow.apache.org",
+    "commits@arrow.apache.org",
+    "jira@arrow.apache.org",
+    "dev@arrow.apache.org",
+    "builds@arrow.apache.org",
+    "user@arrow.apache.org"
+  ],
+  "hudi.apache.org": [
+    "commits@hudi.apache.org",
+    "dev@hudi.apache.org",
+    "users@hudi.apache.org"
+  ],
+  "lucene.apache.org": [
+    "dev@lucene.apache.org",
+    "solr-user@lucene.apache.org",
+    "commits@lucene.apache.org",
+    "issues@lucene.apache.org",
+    "java-user@lucene.apache.org",
+    "builds@lucene.apache.org",
+    "solr-dev@lucene.apache.org",
+    "solr-commits@lucene.apache.org",
+    "java-commits@lucene.apache.org",
+    "general@lucene.apache.org",
+    "pylucene-dev@lucene.apache.org",
+    "pylucene-commits@lucene.apache.org",
+    "ruby-dev@lucene.apache.org",
+    "openrelevance-dev@lucene.apache.org",
+    "c-dev@lucene.apache.org",
+    "openrelevance-user@lucene.apache.org",
+    "c-commits@lucene.apache.org",
+    "nutch-general@lucene.apache.org",
+    "commits-sandbox@lucene.apache.org"
+  ],
+  "maven.apache.org": [
+    "issues@maven.apache.org",
+    "commits@maven.apache.org",
+    "users@maven.apache.org",
+    "dev@maven.apache.org",
+    "notifications@maven.apache.org",
+    "site-commits@maven.apache.org",
+    "repo-maintainers@maven.apache.org",
+    "m2-dev@maven.apache.org",
+    "doxia-commits@maven.apache.org",
+    "scm-dev@maven.apache.org",
+    "scm-commits@maven.apache.org",
+    "announce@maven.apache.org",
+    "wagon-commits@maven.apache.org",
+    "surefire-commits@maven.apache.org",
+    "doxia-dev@maven.apache.org",
+    "wagon-dev@maven.apache.org",
+    "surefire-dev@maven.apache.org",
+    "scm-users@maven.apache.org",
+    "doxia-users@maven.apache.org",
+    "wagon-users@maven.apache.org",
+    "surefire-users@maven.apache.org",
+    "general@maven.apache.org"
+  ],
+  "cassandra.apache.org": [
+    "commits@cassandra.apache.org",
+    "user@cassandra.apache.org",
+    "pr@cassandra.apache.org",
+    "dev@cassandra.apache.org",
+    "builds@cassandra.apache.org",
+    "client-dev@cassandra.apache.org",
+    "marketing@cassandra.apache.org",
+    "gsod2019@cassandra.apache.org",
+    "comdev@cassandra.apache.org"
+  ],
+  "hadoop.apache.org": [
+    "hdfs-issues@hadoop.apache.org",
+    "common-issues@hadoop.apache.org",
+    "yarn-issues@hadoop.apache.org",
+    "common-dev@hadoop.apache.org",
+    "common-commits@hadoop.apache.org",
+    "mapreduce-issues@hadoop.apache.org",
+    "common-user@hadoop.apache.org",
+    "hdfs-dev@hadoop.apache.org",
+    "yarn-dev@hadoop.apache.org",
+    "mapreduce-dev@hadoop.apache.org",
+    "mapreduce-user@hadoop.apache.org",
+    "user@hadoop.apache.org",
+    "hdfs-user@hadoop.apache.org",
+    "hdfs-commits@hadoop.apache.org",
+    "general@hadoop.apache.org",
+    "mapreduce-commits@hadoop.apache.org",
+    "yarn-commits@hadoop.apache.org",
+    "submarine-dev@hadoop.apache.org",
+    "dev@hadoop.apache.org",
+    "user-zh@hadoop.apache.org",
+    "submarine-user@hadoop.apache.org"
+  ],
+  "superset.apache.org": [
+    "notifications@superset.apache.org",
+    "commits@superset.apache.org",
+    "dev@superset.apache.org",
+    "user@superset.apache.org"
+  ],
+  "tomcat.apache.org": [
+    "users@tomcat.apache.org",
+    "dev@tomcat.apache.org",
+    "taglibs-user@tomcat.apache.org",
+    "announce@tomcat.apache.org"
+  ],
+  "cloudstack.apache.org": [
+    "commits@cloudstack.apache.org",
+    "dev@cloudstack.apache.org",
+    "issues@cloudstack.apache.org",
+    "users@cloudstack.apache.org",
+    "users-cn@cloudstack.apache.org",
+    "marketing@cloudstack.apache.org",
+    "announce@cloudstack.apache.org"
+  ],
+  "kafka.apache.org": [
+    "jira@kafka.apache.org",
+    "dev@kafka.apache.org",
+    "users@kafka.apache.org",
+    "commits@kafka.apache.org"
+  ],
+  "hive.apache.org": [
+    "issues@hive.apache.org",
+    "dev@hive.apache.org",
+    "gitbox@hive.apache.org",
+    "commits@hive.apache.org",
+    "user@hive.apache.org"
+  ],
+  "iceberg.apache.org": [
+    "issues@iceberg.apache.org",
+    "commits@iceberg.apache.org",
+    "ci-jobs@iceberg.apache.org",
+    "dev@iceberg.apache.org"
+  ],
+  "pulsar.apache.org": [
+    "commits@pulsar.apache.org",
+    "dev@pulsar.apache.org",
+    "users@pulsar.apache.org"
+  ],
+  "skywalking.apache.org": [
+    "notifications@skywalking.apache.org",
+    "dev@skywalking.apache.org",
+    "commits@skywalking.apache.org"
+  ],
+  "beam.apache.org": [
+    "github@beam.apache.org",
+    "issues@beam.apache.org",
+    "commits@beam.apache.org",
+    "builds@beam.apache.org",
+    "dev@beam.apache.org",
+    "user@beam.apache.org",
+    "stackoverflow@beam.apache.org"
+  ],
+  "shardingsphere.apache.org": [
+    "notifications@shardingsphere.apache.org",
+    "dev@shardingsphere.apache.org"
+  ],
+  "struts.apache.org": [
+    "user@struts.apache.org",
+    "dev@struts.apache.org",
+    "issues@struts.apache.org",
+    "commits@struts.apache.org",
+    "notifications@struts.apache.org",
+    "announcements@struts.apache.org"
+  ],
+  "nifi.apache.org": [
+    "issues@nifi.apache.org",
+    "commits@nifi.apache.org",
+    "dev@nifi.apache.org",
+    "users@nifi.apache.org"
+  ],
+  "asterixdb.apache.org": [
+    "notifications@asterixdb.apache.org",
+    "commits@asterixdb.apache.org",
+    "dev@asterixdb.apache.org",
+    "users@asterixdb.apache.org"
+  ],
+  "ignite.apache.org": [
+    "issues@ignite.apache.org",
+    "commits@ignite.apache.org",
+    "notifications@ignite.apache.org",
+    "dev@ignite.apache.org",
+    "user@ignite.apache.org"
+  ],
+  "ozone.apache.org": [
+    "issues@ozone.apache.org",
+    "commits@ozone.apache.org",
+    "dev@ozone.apache.org",
+    "user@ozone.apache.org"
+  ],
+  "commons.apache.org": [
+    "dev@commons.apache.org",
+    "commits@commons.apache.org",
+    "issues@commons.apache.org",
+    "notifications@commons.apache.org",
+    "user@commons.apache.org",
+    "general@commons.apache.org",
+    "dependabot@commons.apache.org"
+  ],
+  "apisix.apache.org": [
+    "notifications@apisix.apache.org",
+    "dev@apisix.apache.org",
+    "commits@apisix.apache.org"
+  ],
+  "nuttx.apache.org": [
+    "commits@nuttx.apache.org",
+    "dev@nuttx.apache.org"
+  ],
+  "impala.apache.org": [
+    "reviews@impala.apache.org",
+    "issues-all@impala.apache.org",
+    "issues@impala.apache.org",
+    "dev@impala.apache.org",
+    "commits@impala.apache.org",
+    "user@impala.apache.org",
+    "builds@impala.apache.org"
+  ],
+  "subversion.apache.org": [
+    "dev@subversion.apache.org",
+    "users@subversion.apache.org",
+    "commits@subversion.apache.org",
+    "notifications@subversion.apache.org",
+    "issues@subversion.apache.org",
+    "announce@subversion.apache.org"
+  ],
+  "sling.apache.org": [
+    "dev@sling.apache.org",
+    "commits@sling.apache.org",
+    "users@sling.apache.org"
+  ],
+  "datafusion.apache.org": [
+    "github@datafusion.apache.org",
+    "commits@datafusion.apache.org",
+    "dev@datafusion.apache.org"
+  ],
+  "httpd.apache.org": [
+    "dev@httpd.apache.org",
+    "users@httpd.apache.org",
+    "cvs@httpd.apache.org",
+    "bugs@httpd.apache.org",
+    "docs@httpd.apache.org",
+    "users-de@httpd.apache.org",
+    "modules-dev@httpd.apache.org",
+    "apreq-dev@httpd.apache.org",
+    "test-dev@httpd.apache.org",
+    "apreq-cvs@httpd.apache.org",
+    "test-cvs@httpd.apache.org",
+    "wiki-changes@httpd.apache.org",
+    "notifications@httpd.apache.org",
+    "cli-dev@httpd.apache.org",
+    "announce@httpd.apache.org",
+    "win32-msi-cvs@httpd.apache.org",
+    "cli-users@httpd.apache.org",
+    "testers@httpd.apache.org",
+    "current-testers@httpd.apache.org",
+    "packagers@httpd.apache.org",
+    "stable-testers@httpd.apache.org",
+    "mbox-dev@httpd.apache.org",
+    "pop3-dev@httpd.apache.org",
+    "modssl-users@httpd.apache.org",
+    "docs-bugs@httpd.apache.org"
+  ],
+  "mxnet.apache.org": [
+    "commits@mxnet.apache.org",
+    "issues@mxnet.apache.org",
+    "dev@mxnet.apache.org",
+    "discuss-archive@mxnet.apache.org",
+    "events@mxnet.apache.org",
+    "user@mxnet.apache.org"
+  ],
+  "dolphinscheduler.apache.org": [
+    "commits@dolphinscheduler.apache.org",
+    "dev@dolphinscheduler.apache.org",
+    "notifications@dolphinscheduler.apache.org",
+    "users@dolphinscheduler.apache.org"
+  ],
+  "cordova.apache.org": [
+    "issues@cordova.apache.org",
+    "commits@cordova.apache.org",
+    "dev@cordova.apache.org"
+  ],
+  "pinot.apache.org": [
+    "commits@pinot.apache.org",
+    "dev@pinot.apache.org",
+    "users@pinot.apache.org"
+  ],
+  "axis.apache.org": [
+    "java-dev@axis.apache.org",
+    "java-user@axis.apache.org",
+    "c-dev@axis.apache.org",
+    "java-commits@axis.apache.org",
+    "c-user@axis.apache.org",
+    "c-commits@axis.apache.org",
+    "general@axis.apache.org",
+    "java-user-ja@axis.apache.org",
+    "axis1-java-user@axis.apache.org",
+    "axis1-c-user@axis.apache.org"
+  ],
+  "spamassassin.apache.org": [
+    "users@spamassassin.apache.org",
+    "dev@spamassassin.apache.org",
+    "commits@spamassassin.apache.org",
+    "sysadmins@spamassassin.apache.org",
+    "ruleqa@spamassassin.apache.org",
+    "dev-de@spamassassin.apache.org",
+    "announce@spamassassin.apache.org",
+    "blogspam@spamassassin.apache.org",
+    "dev-br@spamassassin.apache.org"
+  ],
+  "tvm.apache.org": [
+    "commits@tvm.apache.org",
+    "discuss-archive@tvm.apache.org",
+    "dev@tvm.apache.org"
+  ],
+  "qpid.apache.org": [
+    "dev@qpid.apache.org",
+    "commits@qpid.apache.org",
+    "users@qpid.apache.org",
+    "notifications@qpid.apache.org",
+    "proton@qpid.apache.org"
+  ],
+  "openoffice.apache.org": [
+    "issues@openoffice.apache.org",
+    "dev@openoffice.apache.org",
+    "commits@openoffice.apache.org",
+    "users@openoffice.apache.org",
+    "users-de@openoffice.apache.org",
+    "l10n@openoffice.apache.org",
+    "qa@openoffice.apache.org",
+    "utenti-it@openoffice.apache.org",
+    "doc@openoffice.apache.org",
+    "marketing@openoffice.apache.org",
+    "dev-de@openoffice.apache.org",
+    "general-es@openoffice.apache.org",
+    "api@openoffice.apache.org",
+    "progetto-it@openoffice.apache.org",
+    "recruitment@openoffice.apache.org",
+    "users-fr@openoffice.apache.org",
+    "volunteer@openoffice.apache.org",
+    "geral-ptbr@openoffice.apache.org",
+    "general-ja@openoffice.apache.org",
+    "announce@openoffice.apache.org"
+  ],
+  "db.apache.org": [
+    "derby-dev@db.apache.org",
+    "derby-commits@db.apache.org",
+    "ojb-user@db.apache.org",
+    "derby-user@db.apache.org",
+    "jdo-dev@db.apache.org",
+    "torque-dev@db.apache.org",
+    "ojb-dev@db.apache.org",
+    "torque-user@db.apache.org",
+    "jdo-commits@db.apache.org",
+    "ddlutils-dev@db.apache.org",
+    "general@db.apache.org",
+    "ddlutils-user@db.apache.org",
+    "commons-dev@db.apache.org",
+    "jdo-user@db.apache.org",
+    "commons-user@db.apache.org",
+    "notifications@db.apache.org",
+    "axion-dev@db.apache.org",
+    "axion-user@db.apache.org"
+  ],
+  "druid.apache.org": [
+    "commits@druid.apache.org",
+    "dev@druid.apache.org",
+    "users@druid.apache.org"
+  ],
+  "dubbo.apache.org": [
+    "notifications@dubbo.apache.org",
+    "commits@dubbo.apache.org",
+    "dev@dubbo.apache.org",
+    "issues@dubbo.apache.org"
+  ],
+  "ofbiz.apache.org": [
+    "dev@ofbiz.apache.org",
+    "notifications@ofbiz.apache.org",
+    "user@ofbiz.apache.org",
+    "commits@ofbiz.apache.org"
+  ],
+  "ambari.apache.org": [
+    "dev@ambari.apache.org",
+    "issues@ambari.apache.org",
+    "commits@ambari.apache.org",
+    "reviews@ambari.apache.org",
+    "user@ambari.apache.org"
+  ],
+  "tapestry.apache.org": [
+    "users@tapestry.apache.org",
+    "dev@tapestry.apache.org",
+    "commits@tapestry.apache.org"
+  ],
+  "tomee.apache.org": [
+    "commits@tomee.apache.org",
+    "notifications@tomee.apache.org",
+    "dev@tomee.apache.org",
+    "users@tomee.apache.org",
+    "site-pub@tomee.apache.org"
+  ],
+  "cocoon.apache.org": [
+    "dev@cocoon.apache.org",
+    "users@cocoon.apache.org",
+    "cvs@cocoon.apache.org",
+    "docs@cocoon.apache.org",
+    "users-fr@cocoon.apache.org"
+  ],
+  "pdfbox.apache.org": [
+    "dev@pdfbox.apache.org",
+    "commits@pdfbox.apache.org",
+    "users@pdfbox.apache.org"
+  ],
+  "geronimo.apache.org": [
+    "dev@geronimo.apache.org",
+    "scm@geronimo.apache.org",
+    "user@geronimo.apache.org",
+    "xbean-dev@geronimo.apache.org",
+    "xbean-scm@geronimo.apache.org",
+    "xbean-user@geronimo.apache.org"
+  ],
+  "carbondata.apache.org": [
+    "issues@carbondata.apache.org",
+    "commits@carbondata.apache.org",
+    "dev@carbondata.apache.org",
+    "user@carbondata.apache.org"
+  ],
+  "jackrabbit.apache.org": [
+    "oak-issues@jackrabbit.apache.org",
+    "dev@jackrabbit.apache.org",
+    "oak-commits@jackrabbit.apache.org",
+    "oak-dev@jackrabbit.apache.org",
+    "commits@jackrabbit.apache.org",
+    "users@jackrabbit.apache.org",
+    "announce@jackrabbit.apache.org"
+  ],
+  "activemq.apache.org": [
+    "issues@activemq.apache.org",
+    "dev@activemq.apache.org",
+    "commits@activemq.apache.org",
+    "users@activemq.apache.org",
+    "gitbox@activemq.apache.org"
+  ],
+  "myfaces.apache.org": [
+    "commits@myfaces.apache.org",
+    "dev@myfaces.apache.org",
+    "users@myfaces.apache.org",
+    "notifications@myfaces.apache.org",
+    "announce@myfaces.apache.org"
+  ],
+  "wicket.apache.org": [
+    "users@wicket.apache.org",
+    "commits@wicket.apache.org",
+    "dev@wicket.apache.org",
+    "announce@wicket.apache.org"
+  ],
+  "accumulo.apache.org": [
+    "notifications@accumulo.apache.org",
+    "commits@accumulo.apache.org",
+    "dev@accumulo.apache.org",
+    "user@accumulo.apache.org"
+  ],
+  "geode.apache.org": [
+    "issues@geode.apache.org",
+    "commits@geode.apache.org",
+    "dev@geode.apache.org",
+    "notifications@geode.apache.org",
+    "user@geode.apache.org"
+  ],
+  "ant.apache.org": [
+    "dev@ant.apache.org",
+    "user@ant.apache.org",
+    "notifications@ant.apache.org",
+    "ivy-user@ant.apache.org"
+  ],
+  "kudu.apache.org": [
+    "reviews@kudu.apache.org",
+    "issues@kudu.apache.org",
+    "commits@kudu.apache.org",
+    "dev@kudu.apache.org",
+    "user@kudu.apache.org",
+    "builds@kudu.apache.org"
+  ],
+  "iotdb.apache.org": [
+    "reviews@iotdb.apache.org",
+    "commits@iotdb.apache.org",
+    "notifications@iotdb.apache.org",
+    "dev@iotdb.apache.org"
+  ],
+  "zookeeper.apache.org": [
+    "dev@zookeeper.apache.org",
+    "notifications@zookeeper.apache.org",
+    "user@zookeeper.apache.org",
+    "commits@zookeeper.apache.org",
+    "issues@zookeeper.apache.org"
+  ],
+  "incubator.apache.org": [
+    "general@incubator.apache.org",
+    "cvs@incubator.apache.org",
+    "npanday-commits@incubator.apache.org",
+    "adffaces-user@incubator.apache.org",
+    "adffaces-commits@incubator.apache.org",
+    "stonehenge-dev@incubator.apache.org",
+    "adffaces-dev@incubator.apache.org",
+    "adffaces-issues@incubator.apache.org",
+    "xap-dev@incubator.apache.org",
+    "ivy-commits@incubator.apache.org",
+    "npanday-dev@incubator.apache.org",
+    "photark-dev@incubator.apache.org",
+    "droids-dev@incubator.apache.org",
+    "graffito-dev@incubator.apache.org",
+    "xap-commits@incubator.apache.org",
+    "ivy-dev@incubator.apache.org",
+    "yoko-commits@incubator.apache.org",
+    "hcatalog-commits@incubator.apache.org",
+    "kato-commits@incubator.apache.org",
+    "bluesky-dev@incubator.apache.org",
+    "nmaven-dev@incubator.apache.org",
+    "olio-dev@incubator.apache.org",
+    "nmaven-commits@incubator.apache.org",
+    "zeta-dev@incubator.apache.org",
+    "ftpserver-dev@incubator.apache.org",
+    "graffito-commits@incubator.apache.org",
+    "easyant-commits@incubator.apache.org",
+    "odf-dev@incubator.apache.org",
+    "s4-commits@incubator.apache.org",
+    "stonehenge-commits@incubator.apache.org",
+    "tashi-commits@incubator.apache.org",
+    "imperius-dev@incubator.apache.org",
+    "droids-commits@incubator.apache.org",
+    "olio-user@incubator.apache.org",
+    "photark-commits@incubator.apache.org",
+    "wave-dev@incubator.apache.org",
+    "kalumet-dev@incubator.apache.org",
+    "sanselan-dev@incubator.apache.org",
+    "kato-dev@incubator.apache.org",
+    "npanday-users@incubator.apache.org",
+    "agila-dev@incubator.apache.org",
+    "kato-spec@incubator.apache.org",
+    "zeta-commits@incubator.apache.org",
+    "nmaven-issues@incubator.apache.org",
+    "olio-commits@incubator.apache.org",
+    "easyant-dev@incubator.apache.org",
+    "bluesky-commits@incubator.apache.org",
+    "kalumet-commits@incubator.apache.org",
+    "imperius-commits@incubator.apache.org",
+    "hise-commits@incubator.apache.org",
+    "zeta-issues@incubator.apache.org",
+    "lokahi-dev@incubator.apache.org",
+    "lokahi-commits@incubator.apache.org",
+    "ftpserver-commits@incubator.apache.org",
+    "wave-commits@incubator.apache.org",
+    "agila-user@incubator.apache.org",
+    "sanselan-commits@incubator.apache.org",
+    "agila-commits@incubator.apache.org",
+    "nuvem-commits@incubator.apache.org",
+    "alois-commits@incubator.apache.org",
+    "blur-dev@incubator.apache.org",
+    "odf-commits@incubator.apache.org",
+    "commits@incubator.apache.org",
+    "awf-commits@incubator.apache.org",
+    "mod_ftp-commits@incubator.apache.org",
+    "triplesoup-commits@incubator.apache.org",
+    "blur-user@incubator.apache.org",
+    "odf-users@incubator.apache.org",
+    "alois-dev@incubator.apache.org",
+    "imperius-user@incubator.apache.org",
+    "wadi-commits@incubator.apache.org",
+    "triplesoup-dev@incubator.apache.org",
+    "bluesky-user@incubator.apache.org",
+    "zeta-users@incubator.apache.org",
+    "blur-commits@incubator.apache.org",
+    "photark-user@incubator.apache.org",
+    "dev@incubator.apache.org",
+    "xap-user@incubator.apache.org",
+    "kalumet-user@incubator.apache.org",
+    "user@incubator.apache.org",
+    "heraldry-commits@incubator.apache.org",
+    "announce@incubator.apache.org",
+    "infra-dev@incubator.apache.org",
+    "hcatalog-user@incubator.apache.org",
+    "nuvem-user@incubator.apache.org",
+    "rcf-commits@incubator.apache.org",
+    "hise-user@incubator.apache.org",
+    "mod_ftp-dev@incubator.apache.org",
+    "awf-users@incubator.apache.org",
+    "hcatalog-dev@incubator.apache.org",
+    "heraldry-user@incubator.apache.org",
+    "hise-dev@incubator.apache.org",
+    "kabuki-user@incubator.apache.org",
+    "nuvem-dev@incubator.apache.org",
+    "s4-user@incubator.apache.org",
+    "tashi-user@incubator.apache.org",
+    "wadi-user@incubator.apache.org",
+    "yoko-user@incubator.apache.org",
+    "awf-dev@incubator.apache.org",
+    "heraldry-dev@incubator.apache.org",
+    "kabuki-commits@incubator.apache.org",
+    "kabuki-dev@incubator.apache.org",
+    "kitty-dev@incubator.apache.org",
+    "rcf-dev@incubator.apache.org",
+    "s4-dev@incubator.apache.org",
+    "socialsite-dev@incubator.apache.org",
+    "tashi-dev@incubator.apache.org",
+    "wadi-dev@incubator.apache.org",
+    "yoko-dev@incubator.apache.org"
+  ],
+  "james.apache.org": [
+    "server-dev@james.apache.org",
+    "notifications@james.apache.org",
+    "server-user@james.apache.org",
+    "site-dev@james.apache.org",
+    "mime4j-dev@james.apache.org",
+    "general@james.apache.org",
+    "mailet-api@james.apache.org"
+  ],
+  "echarts.apache.org": [
+    "commits@echarts.apache.org",
+    "dev@echarts.apache.org"
+  ],
+  "rocketmq.apache.org": [
+    "commits@rocketmq.apache.org",
+    "dev@rocketmq.apache.org",
+    "issues@rocketmq.apache.org",
+    "users@rocketmq.apache.org"
+  ],
+  "drill.apache.org": [
+    "issues@drill.apache.org",
+    "dev@drill.apache.org",
+    "user@drill.apache.org",
+    "commits@drill.apache.org"
+  ],
+  "trafficserver.apache.org": [
+    "issues@trafficserver.apache.org",
+    "commits@trafficserver.apache.org",
+    "github@trafficserver.apache.org",
+    "dev@trafficserver.apache.org",
+    "users@trafficserver.apache.org",
+    "announce@trafficserver.apache.org"
+  ],
+  "mesos.apache.org": [
+    "reviews@mesos.apache.org",
+    "issues@mesos.apache.org",
+    "dev@mesos.apache.org",
+    "builds@mesos.apache.org",
+    "commits@mesos.apache.org",
+    "user@mesos.apache.org",
+    "modules@mesos.apache.org"
+  ],
+  "phoenix.apache.org": [
+    "dev@phoenix.apache.org",
+    "issues@phoenix.apache.org",
+    "commits@phoenix.apache.org",
+    "user@phoenix.apache.org"
+  ],
+  "seatunnel.apache.org": [
+    "commits@seatunnel.apache.org",
+    "dev@seatunnel.apache.org",
+    "users@seatunnel.apache.org"
+  ],
+  "cxf.apache.org": [
+    "commits@cxf.apache.org",
+    "issues@cxf.apache.org",
+    "users@cxf.apache.org",
+    "notifications@cxf.apache.org",
+    "dev@cxf.apache.org"
+  ],
+  "solr.apache.org": [
+    "issues@solr.apache.org",
+    "builds@solr.apache.org",
+    "commits@solr.apache.org",
+    "users@solr.apache.org",
+    "dev@solr.apache.org"
+  ],
+  "directory.apache.org": [
+    "dev@directory.apache.org",
+    "commits@directory.apache.org",
+    "notifications@directory.apache.org",
+    "users@directory.apache.org",
+    "kerby@directory.apache.org",
+    "api@directory.apache.org",
+    "fortress@directory.apache.org",
+    "scimple@directory.apache.org",
+    "alliance@directory.apache.org"
+  ],
+  "calcite.apache.org": [
+    "issues@calcite.apache.org",
+    "commits@calcite.apache.org",
+    "dev@calcite.apache.org"
+  ],
+  "tinkerpop.apache.org": [
+    "commits@tinkerpop.apache.org",
+    "dev@tinkerpop.apache.org"
+  ],
+  "thrift.apache.org": [
+    "dev@thrift.apache.org",
+    "commits@thrift.apache.org",
+    "notifications@thrift.apache.org",
+    "user@thrift.apache.org"
+  ],
+  "flex.apache.org": [
+    "dev@flex.apache.org",
+    "commits@flex.apache.org",
+    "users@flex.apache.org",
+    "issues@flex.apache.org"
+  ],
+  "storm.apache.org": [
+    "dev@storm.apache.org",
+    "commits@storm.apache.org",
+    "user@storm.apache.org",
+    "issues@storm.apache.org"
+  ],
+  "harmony.apache.org": [
+    "commits@harmony.apache.org",
+    "dev@harmony.apache.org",
+    "alerts@harmony.apache.org"
+  ],
+  "felix.apache.org": [
+    "dev@felix.apache.org",
+    "commits@felix.apache.org",
+    "users@felix.apache.org"
+  ],
+  "perl.apache.org": [
+    "modperl@perl.apache.org",
+    "docs-dev@perl.apache.org",
+    "dev@perl.apache.org",
+    "embperl@perl.apache.org",
+    "modperl-cvs@perl.apache.org",
+    "asp@perl.apache.org",
+    "docs-cvs@perl.apache.org",
+    "embperl-cvs@perl.apache.org",
+    "test-dev@perl.apache.org",
+    "test-commits@perl.apache.org",
+    "advocacy@perl.apache.org",
+    "announce@perl.apache.org"
+  ],
+  "couchdb.apache.org": [
+    "notifications@couchdb.apache.org",
+    "commits@couchdb.apache.org",
+    "dev@couchdb.apache.org",
+    "user@couchdb.apache.org",
+    "marketing@couchdb.apache.org",
+    "l10n@couchdb.apache.org",
+    "couchapp@couchdb.apache.org",
+    "replication@couchdb.apache.org",
+    "erlang@couchdb.apache.org",
+    "announce@couchdb.apache.org",
+    "design@couchdb.apache.org",
+    "www@couchdb.apache.org"
+  ],
+  "netbeans.apache.org": [
+    "notifications@netbeans.apache.org",
+    "commits@netbeans.apache.org",
+    "dev@netbeans.apache.org",
+    "users@netbeans.apache.org",
+    "netcat@netbeans.apache.org",
+    "announce@netbeans.apache.org"
+  ],
+  "gravitino.apache.org": [
+    "commits@gravitino.apache.org",
+    "dev@gravitino.apache.org"
+  ],
+  "pig.apache.org": [
+    "dev@pig.apache.org",
+    "user@pig.apache.org",
+    "commits@pig.apache.org"
+  ],
+  "servicemix.apache.org": [
+    "commits@servicemix.apache.org",
+    "dev@servicemix.apache.org",
+    "users@servicemix.apache.org",
+    "issues@servicemix.apache.org"
+  ],
+  "karaf.apache.org": [
+    "issues@karaf.apache.org",
+    "commits@karaf.apache.org",
+    "user@karaf.apache.org",
+    "dev@karaf.apache.org"
+  ],
+  "pekko.apache.org": [
+    "notifications@pekko.apache.org",
+    "commits@pekko.apache.org",
+    "dev@pekko.apache.org",
+    "users@pekko.apache.org"
+  ],
+  "gluten.apache.org": [
+    "commits@gluten.apache.org",
+    "dev@gluten.apache.org"
+  ],
+  "tika.apache.org": [
+    "dev@tika.apache.org",
+    "commits@tika.apache.org",
+    "user@tika.apache.org",
+    "corpora-dev@tika.apache.org"
+  ],
+  "hc.apache.org": [
+    "dev@hc.apache.org",
+    "commits@hc.apache.org",
+    "httpclient-users@hc.apache.org"
+  ],
+  "logging.apache.org": [
+    "commits@logging.apache.org",
+    "log4j-dev@logging.apache.org",
+    "notifications@logging.apache.org",
+    "log4j-user@logging.apache.org",
+    "dev@logging.apache.org",
+    "log4net-dev@logging.apache.org",
+    "log4net-user@logging.apache.org",
+    "log4cxx-user@logging.apache.org",
+    "robots@logging.apache.org",
+    "log4cxx-dev@logging.apache.org",
+    "log4php-dev@logging.apache.org",
+    "general@logging.apache.org",
+    "log4php-user@logging.apache.org",
+    "flume-users@logging.apache.org"
+  ],
+  "groovy.apache.org": [
+    "notifications@groovy.apache.org",
+    "commits@groovy.apache.org",
+    "dev@groovy.apache.org",
+    "users@groovy.apache.org",
+    "geb-notifications@groovy.apache.org",
+    "geb-dev@groovy.apache.org",
+    "geb-users@groovy.apache.org"
+  ],
+  "xmlgraphics.apache.org": [
+    "fop-dev@xmlgraphics.apache.org",
+    "fop-users@xmlgraphics.apache.org",
+    "batik-users@xmlgraphics.apache.org",
+    "fop-commits@xmlgraphics.apache.org",
+    "batik-dev@xmlgraphics.apache.org",
+    "commits@xmlgraphics.apache.org",
+    "general@xmlgraphics.apache.org",
+    "batik-commits@xmlgraphics.apache.org"
+  ],
+  "kylin.apache.org": [
+    "issues@kylin.apache.org",
+    "commits@kylin.apache.org",
+    "dev@kylin.apache.org",
+    "user@kylin.apache.org"
+  ],
+  "openwhisk.apache.org": [
+    "issues@openwhisk.apache.org",
+    "commits@openwhisk.apache.org",
+    "dev@openwhisk.apache.org"
+  ],
+  "poi.apache.org": [
+    "dev@poi.apache.org",
+    "user@poi.apache.org",
+    "commits@poi.apache.org",
+    "general@poi.apache.org"
+  ],
+  "trafficcontrol.apache.org": [
+    "issues@trafficcontrol.apache.org",
+    "commits@trafficcontrol.apache.org",
+    "dev@trafficcontrol.apache.org",
+    "users@trafficcontrol.apache.org"
+  ],
+  "oozie.apache.org": [
+    "dev@oozie.apache.org",
+    "commits@oozie.apache.org",
+    "user@oozie.apache.org"
+  ],
+  "mahout.apache.org": [
+    "dev@mahout.apache.org",
+    "user@mahout.apache.org",
+    "commits@mahout.apache.org",
+    "issues@mahout.apache.org",
+    "general@mahout.apache.org"
+  ],
+  "tez.apache.org": [
+    "issues@tez.apache.org",
+    "dev@tez.apache.org",
+    "commits@tez.apache.org",
+    "user@tez.apache.org"
+  ],
+  "tuscany.apache.org": [
+    "dev@tuscany.apache.org",
+    "commits@tuscany.apache.org",
+    "user@tuscany.apache.org",
+    "notification@tuscany.apache.org"
+  ],
+  "ranger.apache.org": [
+    "dev@ranger.apache.org",
+    "commits@ranger.apache.org",
+    "user@ranger.apache.org"
+  ],
+  "jclouds.apache.org": [
+    "notifications@jclouds.apache.org",
+    "dev@jclouds.apache.org",
+    "commits@jclouds.apache.org",
+    "user@jclouds.apache.org"
+  ],
+  "atlas.apache.org": [
+    "dev@atlas.apache.org",
+    "commits@atlas.apache.org",
+    "user@atlas.apache.org"
+  ],
+  "opendal.apache.org": [
+    "commits@opendal.apache.org",
+    "dev@opendal.apache.org"
+  ],
+  "mynewt.apache.org": [
+    "commits@mynewt.apache.org",
+    "notifications@mynewt.apache.org",
+    "dev@mynewt.apache.org"
+  ],
+  "uima.apache.org": [
+    "dev@uima.apache.org",
+    "commits@uima.apache.org",
+    "user@uima.apache.org"
+  ],
+  "jmeter.apache.org": [
+    "user@jmeter.apache.org",
+    "dev@jmeter.apache.org",
+    "issues@jmeter.apache.org",
+    "commits@jmeter.apache.org"
+  ],
+  "zeppelin.apache.org": [
+    "dev@zeppelin.apache.org",
+    "users@zeppelin.apache.org",
+    "commits@zeppelin.apache.org",
+    "reviews@zeppelin.apache.org"
+  ],
+  "isis.apache.org": [
+    "dev@isis.apache.org",
+    "commits@isis.apache.org",
+    "users@isis.apache.org"
+  ],
+  "mina.apache.org": [
+    "dev@mina.apache.org",
+    "commits@mina.apache.org",
+    "users@mina.apache.org",
+    "ftpserver-users@mina.apache.org"
+  ],
+  "servicecomb.apache.org": [
+    "commits@servicecomb.apache.org",
+    "issues@servicecomb.apache.org",
+    "dev@servicecomb.apache.org"
+  ],
+  "kie.apache.org": [
+    "commits@kie.apache.org",
+    "dev@kie.apache.org",
+    "users@kie.apache.org"
+  ],
+  "avro.apache.org": [
+    "dev@avro.apache.org",
+    "issues@avro.apache.org",
+    "commits@avro.apache.org",
+    "user@avro.apache.org"
+  ],
+  "nutch.apache.org": [
+    "dev@nutch.apache.org",
+    "user@nutch.apache.org",
+    "commits@nutch.apache.org",
+    "agent@nutch.apache.org"
+  ],
+  "xalan.apache.org": [
+    "dev@xalan.apache.org",
+    "commits@xalan.apache.org",
+    "j-users@xalan.apache.org",
+    "c-users@xalan.apache.org"
+  ],
+  "knox.apache.org": [
+    "dev@knox.apache.org",
+    "commits@knox.apache.org",
+    "user@knox.apache.org"
+  ],
+  "paimon.apache.org": [
+    "issues@paimon.apache.org",
+    "commits@paimon.apache.org",
+    "dev@paimon.apache.org",
+    "user@paimon.apache.org",
+    "builds@paimon.apache.org"
+  ],
+  "fineract.apache.org": [
+    "commits@fineract.apache.org",
+    "issues@fineract.apache.org",
+    "dev@fineract.apache.org",
+    "user@fineract.apache.org"
+  ],
+  "deltaspike.apache.org": [
+    "commits@deltaspike.apache.org",
+    "dev@deltaspike.apache.org",
+    "users@deltaspike.apache.org"
+  ],
+  "portals.apache.org": [
+    "jetspeed-dev@portals.apache.org",
+    "jetspeed-user@portals.apache.org",
+    "pluto-dev@portals.apache.org",
+    "pluto-scm@portals.apache.org",
+    "pluto-user@portals.apache.org",
+    "wsrp4j-dev@portals.apache.org",
+    "general@portals.apache.org",
+    "portalapps-dev@portals.apache.org",
+    "wsrp4j-user@portals.apache.org",
+    "commits@portals.apache.org",
+    "bridges-dev@portals.apache.org",
+    "bridges-commits@portals.apache.org",
+    "bridges-user@portals.apache.org",
+    "portalapps-user@portals.apache.org"
+  ],
+  "shenyu.apache.org": [
+    "notifications@shenyu.apache.org",
+    "dev@shenyu.apache.org"
+  ],
+  "devlake.apache.org": [
+    "commits@devlake.apache.org",
+    "dev@devlake.apache.org"
+  ],
+  "sqoop.apache.org": [
+    "dev@sqoop.apache.org",
+    "user@sqoop.apache.org",
+    "commits@sqoop.apache.org"
+  ],
+  "jena.apache.org": [
+    "dev@jena.apache.org",
+    "commits@jena.apache.org",
+    "users@jena.apache.org",
+    "pr@jena.apache.org",
+    "issues@jena.apache.org",
+    "jira@jena.apache.org"
+  ],
+  "kyuubi.apache.org": [
+    "notifications@kyuubi.apache.org",
+    "commits@kyuubi.apache.org",
+    "dev@kyuubi.apache.org"
+  ],
+  "polaris.apache.org": [
+    "issues@polaris.apache.org",
+    "commits@polaris.apache.org",
+    "dev@polaris.apache.org"
+  ],
+  "brooklyn.apache.org": [
+    "dev@brooklyn.apache.org",
+    "commits@brooklyn.apache.org"
+  ],
+  "forrest.apache.org": [
+    "dev@forrest.apache.org",
+    "svn@forrest.apache.org",
+    "user@forrest.apache.org",
+    "site-svn@forrest.apache.org"
+  ],
+  "inlong.apache.org": [
+    "commits@inlong.apache.org",
+    "dev@inlong.apache.org"
+  ],
+  "openmeetings.apache.org": [
+    "commits@openmeetings.apache.org",
+    "user@openmeetings.apache.org",
+    "dev@openmeetings.apache.org",
+    "user-russian@openmeetings.apache.org",
+    "user-espanol@openmeetings.apache.org"
+  ],
+  "bigtop.apache.org": [
+    "dev@bigtop.apache.org",
+    "issues@bigtop.apache.org",
+    "ci@bigtop.apache.org",
+    "commits@bigtop.apache.org",
+    "user@bigtop.apache.org",
+    "announce@bigtop.apache.org"
+  ],
+  "avalon.apache.org": [
+    "dev@avalon.apache.org",
+    "cvs@avalon.apache.org",
+    "phoenix-dev@avalon.apache.org",
+    "apps-dev@avalon.apache.org"
+  ],
+  "gobblin.apache.org": [
+    "dev@gobblin.apache.org",
+    "commits@gobblin.apache.org",
+    "user@gobblin.apache.org"
+  ],
+  "daffodil.apache.org": [
+    "commits@daffodil.apache.org",
+    "dev@daffodil.apache.org",
+    "users@daffodil.apache.org"
+  ],
+  "xerces.apache.org": [
+    "c-dev@xerces.apache.org",
+    "j-dev@xerces.apache.org",
+    "commits@xerces.apache.org",
+    "j-users@xerces.apache.org",
+    "c-users@xerces.apache.org",
+    "general@xerces.apache.org",
+    "p-dev@xerces.apache.org",
+    "xml-commons-dev@xerces.apache.org"
+  ],
+  "bookkeeper.apache.org": [
+    "issues@bookkeeper.apache.org",
+    "dev@bookkeeper.apache.org",
+    "commits@bookkeeper.apache.org",
+    "distributedlog-dev@bookkeeper.apache.org",
+    "distributedlog-commits@bookkeeper.apache.org",
+    "user@bookkeeper.apache.org",
+    "distributedlog-issues@bookkeeper.apache.org",
+    "distributedlog-user@bookkeeper.apache.org"
+  ],
+  "airavata.apache.org": [
+    "commits@airavata.apache.org",
+    "issues@airavata.apache.org",
+    "dev@airavata.apache.org",
+    "custos@airavata.apache.org",
+    "users@airavata.apache.org",
+    "architecture@airavata.apache.org"
+  ],
+  "parquet.apache.org": [
+    "dev@parquet.apache.org",
+    "issues@parquet.apache.org",
+    "commits@parquet.apache.org"
+  ],
+  "apr.apache.org": [
+    "dev@apr.apache.org",
+    "commits@apr.apache.org",
+    "bugs@apr.apache.org",
+    "serf-dev@apr.apache.org"
+  ],
+  "cayenne.apache.org": [
+    "commits@cayenne.apache.org",
+    "user@cayenne.apache.org",
+    "dev@cayenne.apache.org"
+  ],
+  "flume.apache.org": [
+    "dev@flume.apache.org",
+    "user@flume.apache.org",
+    "commits@flume.apache.org",
+    "issues@flume.apache.org"
+  ],
+  "openjpa.apache.org": [
+    "dev@openjpa.apache.org",
+    "commits@openjpa.apache.org",
+    "users@openjpa.apache.org"
+  ],
+  "metron.apache.org": [
+    "issues@metron.apache.org",
+    "dev@metron.apache.org",
+    "commits@metron.apache.org",
+    "user@metron.apache.org"
+  ],
+  "aries.apache.org": [
+    "dev@aries.apache.org",
+    "commits@aries.apache.org",
+    "user@aries.apache.org",
+    "site-pub@aries.apache.org"
+  ],
+  "samza.apache.org": [
+    "commits@samza.apache.org",
+    "dev@samza.apache.org"
+  ],
+  "syncope.apache.org": [
+    "dev@syncope.apache.org",
+    "commits@syncope.apache.org",
+    "user@syncope.apache.org"
+  ],
+  "tajo.apache.org": [
+    "issues@tajo.apache.org",
+    "dev@tajo.apache.org",
+    "commits@tajo.apache.org",
+    "user@tajo.apache.org"
+  ],
+  "ratis.apache.org": [
+    "issues@ratis.apache.org",
+    "dev@ratis.apache.org",
+    "commits@ratis.apache.org",
+    "user@ratis.apache.org"
+  ],
+  "turbine.apache.org": [
+    "dev@turbine.apache.org",
+    "user@turbine.apache.org",
+    "commits@turbine.apache.org",
+    "tdk-dev@turbine.apache.org",
+    "general@turbine.apache.org"
+  ],
+  "lenya.apache.org": [
+    "dev@lenya.apache.org",
+    "user@lenya.apache.org",
+    "commits@lenya.apache.org"
+  ],
+  "libcloud.apache.org": [
+    "notifications@libcloud.apache.org",
+    "dev@libcloud.apache.org",
+    "users@libcloud.apache.org",
+    "announce@libcloud.apache.org"
+  ],
+  "stratos.apache.org": [
+    "dev@stratos.apache.org",
+    "commits@stratos.apache.org"
+  ],
+  "weex.apache.org": [
+    "commits@weex.apache.org",
+    "dev@weex.apache.org",
+    "user@weex.apache.org"
+  ],
+  "shindig.apache.org": [
+    "dev@shindig.apache.org",
+    "issues@shindig.apache.org",
+    "commits@shindig.apache.org",
+    "users@shindig.apache.org"
+  ],
+  "velocity.apache.org": [
+    "dev@velocity.apache.org",
+    "user@velocity.apache.org",
+    "commits@velocity.apache.org",
+    "general@velocity.apache.org"
+  ],
+  "plc4x.apache.org": [
+    "commits@plc4x.apache.org",
+    "dev@plc4x.apache.org",
+    "issues@plc4x.apache.org"
+  ],
+  "falcon.apache.org": [
+    "dev@falcon.apache.org",
+    "commits@falcon.apache.org",
+    "user@falcon.apache.org"
+  ],
+  "grails.apache.org": [
+    "commits@grails.apache.org",
+    "notifications@grails.apache.org",
+    "dev@grails.apache.org",
+    "users@grails.apache.org"
+  ],
+  "kvrocks.apache.org": [
+    "issues@kvrocks.apache.org",
+    "builds@kvrocks.apache.org",
+    "commits@kvrocks.apache.org",
+    "dev@kvrocks.apache.org"
+  ],
+  "yunikorn.apache.org": [
+    "issues@yunikorn.apache.org",
+    "reviews@yunikorn.apache.org",
+    "dev@yunikorn.apache.org"
+  ],
+  "lens.apache.org": [
+    "dev@lens.apache.org",
+    "commits@lens.apache.org",
+    "user@lens.apache.org"
+  ],
+  "helix.apache.org": [
+    "reviews@helix.apache.org",
+    "commits@helix.apache.org",
+    "dev@helix.apache.org",
+    "user@helix.apache.org"
+  ],
+  "celeborn.apache.org": [
+    "commits@celeborn.apache.org",
+    "issues@celeborn.apache.org",
+    "dev@celeborn.apache.org",
+    "user@celeborn.apache.org"
+  ],
+  "community.apache.org": [
+    "commits@community.apache.org",
+    "dev@community.apache.org",
+    "security-discuss@community.apache.org",
+    "notifications@community.apache.org",
+    "gsoc@community.apache.org",
+    "students@community.apache.org"
+  ],
+  "royale.apache.org": [
+    "dev@royale.apache.org",
+    "commits@royale.apache.org",
+    "issues@royale.apache.org",
+    "users@royale.apache.org",
+    "royale-builds@royale.apache.org"
+  ],
+  "apex.apache.org": [
+    "dev@apex.apache.org",
+    "commits@apex.apache.org",
+    "users@apex.apache.org"
+  ],
+  "manifoldcf.apache.org": [
+    "dev@manifoldcf.apache.org",
+    "commits@manifoldcf.apache.org",
+    "user@manifoldcf.apache.org",
+    "general@manifoldcf.apache.org"
+  ],
+  "jakarta.apache.org": [
+    "jmeter-dev@jakarta.apache.org",
+    "general@jakarta.apache.org",
+    "slide-dev@jakarta.apache.org",
+    "slide-user@jakarta.apache.org",
+    "cactus-dev@jakarta.apache.org",
+    "taglibs-dev@jakarta.apache.org",
+    "cactus-user@jakarta.apache.org",
+    "alexandria-dev@jakarta.apache.org",
+    "notifications@jakarta.apache.org",
+    "site-cvs@jakarta.apache.org",
+    "jcs-users@jakarta.apache.org",
+    "jcs-dev@jakarta.apache.org",
+    "bcel-dev@jakarta.apache.org",
+    "bsf-dev@jakarta.apache.org",
+    "regexp-dev@jakarta.apache.org",
+    "watchdog-dev@jakarta.apache.org",
+    "bcel-user@jakarta.apache.org",
+    "oro-dev@jakarta.apache.org",
+    "dev@jakarta.apache.org",
+    "log4j-cvs@jakarta.apache.org",
+    "oro-user@jakarta.apache.org",
+    "-deprecated@jakarta.apache.org",
+    "library-dev@jakarta.apache.org",
+    "regexp-user@jakarta.apache.org",
+    "announcements@jakarta.apache.org",
+    "ecs-user@jakarta.apache.org",
+    "ecs-dev@jakarta.apache.org",
+    "bsf-user@jakarta.apache.org",
+    "servletapi-dev@jakarta.apache.org",
+    "docs@jakarta.apache.org",
+    "alexandria-user@jakarta.apache.org"
+  ],
+  "iggy.apache.org": [
+    "commits@iggy.apache.org",
+    "dev@iggy.apache.org"
+  ],
+  "usergrid.apache.org": [
+    "commits@usergrid.apache.org",
+    "dev@usergrid.apache.org",
+    "user@usergrid.apache.org"
+  ],
+  "allura.apache.org": [
+    "commits@allura.apache.org",
+    "dev@allura.apache.org",
+    "users@allura.apache.org"
+  ],
+  "hawq.apache.org": [
+    "issues@hawq.apache.org",
+    "dev@hawq.apache.org",
+    "commits@hawq.apache.org",
+    "user@hawq.apache.org"
+  ],
+  "texera.apache.org": [
+    "notifications@texera.apache.org",
+    "commits@texera.apache.org",
+    "dev@texera.apache.org"
+  ],
+  "datasketches.apache.org": [
+    "commits@datasketches.apache.org",
+    "dev@datasketches.apache.org",
+    "users@datasketches.apache.org"
+  ],
+  "streampipes.apache.org": [
+    "commits@streampipes.apache.org",
+    "issues@streampipes.apache.org",
+    "dev@streampipes.apache.org",
+    "users@streampipes.apache.org"
+  ],
+  "gump.apache.org": [
+    "general@gump.apache.org",
+    "commits@gump.apache.org"
+  ],
+  "orc.apache.org": [
+    "issues@orc.apache.org",
+    "dev@orc.apache.org",
+    "commits@orc.apache.org",
+    "user@orc.apache.org"
+  ],
+  "aurora.apache.org": [
+    "reviews@aurora.apache.org",
+    "issues@aurora.apache.org",
+    "dev@aurora.apache.org",
+    "commits@aurora.apache.org",
+    "user@aurora.apache.org",
+    "announcements@aurora.apache.org"
+  ],
+  "uniffle.apache.org": [
+    "issues@uniffle.apache.org",
+    "dev@uniffle.apache.org",
+    "commits@uniffle.apache.org",
+    "users@uniffle.apache.org"
+  ],
+  "ibatis.apache.org": [
+    "user-java@ibatis.apache.org",
+    "dev@ibatis.apache.org",
+    "user-cs@ibatis.apache.org",
+    "commits@ibatis.apache.org"
+  ],
+  "sis.apache.org": [
+    "commits@sis.apache.org",
+    "dev@sis.apache.org",
+    "issues@sis.apache.org",
+    "user@sis.apache.org"
+  ],
+  "synapse.apache.org": [
+    "dev@synapse.apache.org",
+    "commits@synapse.apache.org",
+    "user@synapse.apache.org"
+  ],
+  "shiro.apache.org": [
+    "commits@shiro.apache.org",
+    "dev@shiro.apache.org",
+    "user@shiro.apache.org",
+    "issues@shiro.apache.org",
+    "announce@shiro.apache.org"
+  ],
+  "brpc.apache.org": [
+    "dev@brpc.apache.org",
+    "issues@brpc.apache.org"
+  ],
+  "guacamole.apache.org": [
+    "user@guacamole.apache.org",
+    "dev@guacamole.apache.org",
+    "commits@guacamole.apache.org",
+    "issues@guacamole.apache.org",
+    "builds@guacamole.apache.org",
+    "announce@guacamole.apache.org"
+  ],
+  "hertzbeat.apache.org": [
+    "notifications@hertzbeat.apache.org",
+    "dev@hertzbeat.apache.org"
+  ],
+  "causeway.apache.org": [
+    "commits@causeway.apache.org",
+    "dev@causeway.apache.org",
+    "users@causeway.apache.org"
+  ],
+  "archiva.apache.org": [
+    "commits@archiva.apache.org",
+    "issues@archiva.apache.org",
+    "notifications@archiva.apache.org",
+    "dev@archiva.apache.org",
+    "users@archiva.apache.org"
+  ],
+  "sentry.apache.org": [
+    "issues@sentry.apache.org",
+    "commits@sentry.apache.org",
+    "dev@sentry.apache.org"
+  ],
+  "lucenenet.apache.org": [
+    "dev@lucenenet.apache.org",
+    "commits@lucenenet.apache.org",
+    "user@lucenenet.apache.org",
+    "builds@lucenenet.apache.org"
+  ],
+  "reef.apache.org": [
+    "dev@reef.apache.org",
+    "commits@reef.apache.org",
+    "user@reef.apache.org"
+  ],
+  "trafodion.apache.org": [
+    "issues@trafodion.apache.org",
+    "commits@trafodion.apache.org",
+    "codereview@trafodion.apache.org",
+    "dev@trafodion.apache.org",
+    "user@trafodion.apache.org"
+  ],
+  "seata.apache.org": [
+    "notifications@seata.apache.org",
+    "dev@seata.apache.org"
+  ],
+  "hop.apache.org": [
+    "issues@hop.apache.org",
+    "commits@hop.apache.org",
+    "users@hop.apache.org",
+    "dev@hop.apache.org"
+  ],
+  "fory.apache.org": [
+    "commits@fory.apache.org",
+    "dev@fory.apache.org"
+  ],
+  "xml.apache.org": [
+    "soap-user@xml.apache.org",
+    "soap-dev@xml.apache.org",
+    "general@xml.apache.org",
+    "xindice-dev@xml.apache.org",
+    "xindice-users@xml.apache.org",
+    "axkit-dev@xml.apache.org",
+    "general-cvs@xml.apache.org",
+    "bugs@xml.apache.org",
+    "xmlbeans-cvs@xml.apache.org",
+    "xmlbeans-dev@xml.apache.org",
+    "rpc-dev@xml.apache.org",
+    "xmlbeans-user@xml.apache.org",
+    "commons-cvs@xml.apache.org",
+    "rpc-user@xml.apache.org",
+    "xsp-dev@xml.apache.org",
+    "announcements@xml.apache.org",
+    "crimson-cvs@xml.apache.org",
+    "juice-dev@xml.apache.org",
+    "xang-dev@xml.apache.org",
+    "xang-cvs@xml.apache.org",
+    "juice-svn@xml.apache.org",
+    "security-users@xml.apache.org",
+    "axkit-users@xml.apache.org",
+    "contrib-cvs@xml.apache.org"
+  ],
+  "fluss.apache.org": [
+    "issues@fluss.apache.org",
+    "builds@fluss.apache.org",
+    "commits@fluss.apache.org",
+    "dev@fluss.apache.org",
+    "user@fluss.apache.org"
+  ],
+  "openwebbeans.apache.org": [
+    "dev@openwebbeans.apache.org",
+    "commits@openwebbeans.apache.org",
+    "user@openwebbeans.apache.org"
+  ],
+  "hama.apache.org": [
+    "dev@hama.apache.org",
+    "commits@hama.apache.org",
+    "user@hama.apache.org"
+  ],
+  "jspwiki.apache.org": [
+    "dev@jspwiki.apache.org",
+    "commits@jspwiki.apache.org",
+    "user@jspwiki.apache.org"
+  ],
+  "curator.apache.org": [
+    "dev@curator.apache.org",
+    "commits@curator.apache.org",
+    "user@curator.apache.org"
+  ],
+  "unomi.apache.org": [
+    "dev@unomi.apache.org",
+    "commits@unomi.apache.org",
+    "users@unomi.apache.org"
+  ],
+  "eventmesh.apache.org": [
+    "dev@eventmesh.apache.org",
+    "issues@eventmesh.apache.org",
+    "commits@eventmesh.apache.org",
+    "users@eventmesh.apache.org"
+  ],
+  "pivot.apache.org": [
+    "dev@pivot.apache.org",
+    "user@pivot.apache.org",
+    "commits@pivot.apache.org"
+  ],
+  "creadur.apache.org": [
+    "dev@creadur.apache.org",
+    "commits@creadur.apache.org"
+  ],
+  "olingo.apache.org": [
+    "commits@olingo.apache.org",
+    "dev@olingo.apache.org",
+    "user@olingo.apache.org"
+  ],
+  "gora.apache.org": [
+    "dev@gora.apache.org",
+    "commits@gora.apache.org",
+    "user@gora.apache.org"
+  ],
+  "buildstream.apache.org": [
+    "commits@buildstream.apache.org",
+    "dev@buildstream.apache.org"
+  ],
+  "ode.apache.org": [
+    "dev@ode.apache.org",
+    "user@ode.apache.org",
+    "commits@ode.apache.org"
+  ],
+  "sedona.apache.org": [
+    "issues@sedona.apache.org",
+    "commits@sedona.apache.org",
+    "dev@sedona.apache.org"
+  ],
+  "river.apache.org": [
+    "dev@river.apache.org",
+    "commits@river.apache.org",
+    "user@river.apache.org"
+  ],
+  "stanbol.apache.org": [
+    "commits@stanbol.apache.org",
+    "dev@stanbol.apache.org"
+  ],
+  "streams.apache.org": [
+    "commits@streams.apache.org",
+    "dev@streams.apache.org",
+    "user@streams.apache.org"
+  ],
+  "giraph.apache.org": [
+    "dev@giraph.apache.org",
+    "user@giraph.apache.org",
+    "commits@giraph.apache.org"
+  ],
+  "slider.apache.org": [
+    "dev@slider.apache.org",
+    "commits@slider.apache.org"
+  ],
+  "cloudberry.apache.org": [
+    "commits@cloudberry.apache.org",
+    "dev@cloudberry.apache.org"
+  ],
+  "dlab.apache.org": [
+    "dev@dlab.apache.org",
+    "commits@dlab.apache.org"
+  ],
+  "streampark.apache.org": [
+    "issues@streampark.apache.org",
+    "commits@streampark.apache.org",
+    "builds@streampark.apache.org",
+    "dev@streampark.apache.org"
+  ],
+  "juneau.apache.org": [
+    "commits@juneau.apache.org",
+    "dev@juneau.apache.org"
+  ],
+  "opennlp.apache.org": [
+    "issues@opennlp.apache.org",
+    "commits@opennlp.apache.org",
+    "dev@opennlp.apache.org",
+    "users@opennlp.apache.org"
+  ],
+  "juddi.apache.org": [
+    "dev@juddi.apache.org",
+    "commits@juddi.apache.org",
+    "user@juddi.apache.org"
+  ],
+  "roller.apache.org": [
+    "commits@roller.apache.org",
+    "dev@roller.apache.org",
+    "user@roller.apache.org"
+  ],
+  "linkis.apache.org": [
+    "notifications@linkis.apache.org",
+    "commits@linkis.apache.org",
+    "dev@linkis.apache.org",
+    "users@linkis.apache.org",
+    "issues@linkis.apache.org"
+  ],
+  "taverna.apache.org": [
+    "commits@taverna.apache.org",
+    "dev@taverna.apache.org",
+    "users@taverna.apache.org"
+  ],
+  "oodt.apache.org": [
+    "commits@oodt.apache.org",
+    "dev@oodt.apache.org",
+    "user@oodt.apache.org"
+  ],
+  "climate.apache.org": [
+    "dev@climate.apache.org",
+    "commits@climate.apache.org"
+  ],
+  "bloodhound.apache.org": [
+    "commits@bloodhound.apache.org",
+    "dev@bloodhound.apache.org",
+    "user@bloodhound.apache.org"
+  ],
+  "chemistry.apache.org": [
+    "dev@chemistry.apache.org",
+    "commits@chemistry.apache.org"
+  ],
+  "answer.apache.org": [
+    "commits@answer.apache.org",
+    "issues@answer.apache.org",
+    "dev@answer.apache.org"
+  ],
+  "hugegraph.apache.org": [
+    "issues@hugegraph.apache.org",
+    "commits@hugegraph.apache.org",
+    "dev@hugegraph.apache.org"
+  ],
+  "santuario.apache.org": [
+    "dev@santuario.apache.org",
+    "commits@santuario.apache.org",
+    "general@santuario.apache.org"
+  ],
+  "rave.apache.org": [
+    "dev@rave.apache.org",
+    "commits@rave.apache.org",
+    "users@rave.apache.org"
+  ],
+  "beehive.apache.org": [
+    "dev@beehive.apache.org",
+    "commits@beehive.apache.org",
+    "user@beehive.apache.org"
+  ],
+  "tooling.apache.org": [
+    "commits@tooling.apache.org",
+    "dev@tooling.apache.org",
+    "issues@tooling.apache.org",
+    "user-tests@tooling.apache.org",
+    "releases@tooling.apache.org",
+    "users@tooling.apache.org"
+  ],
+  "eagle.apache.org": [
+    "dev@eagle.apache.org",
+    "issues@eagle.apache.org",
+    "commits@eagle.apache.org",
+    "user@eagle.apache.org"
+  ],
+  "yetus.apache.org": [
+    "notifications@yetus.apache.org",
+    "gitbox@yetus.apache.org",
+    "dev@yetus.apache.org",
+    "commits@yetus.apache.org"
+  ],
+  "celix.apache.org": [
+    "commits@celix.apache.org",
+    "dev@celix.apache.org"
+  ],
+  "deltacloud.apache.org": [
+    "dev@deltacloud.apache.org",
+    "commits@deltacloud.apache.org",
+    "user@deltacloud.apache.org"
+  ],
+  "clerezza.apache.org": [
+    "dev@clerezza.apache.org",
+    "commits@clerezza.apache.org"
+  ],
+  "fury.apache.org": [
+    "commits@fury.apache.org",
+    "dev@fury.apache.org"
+  ],
+  "systemml.apache.org": [
+    "issues@systemml.apache.org",
+    "commits@systemml.apache.org",
+    "dev@systemml.apache.org"
+  ],
+  "continuum.apache.org": [
+    "dev@continuum.apache.org",
+    "users@continuum.apache.org",
+    "commits@continuum.apache.org",
+    "issues@continuum.apache.org",
+    "notifications@continuum.apache.org"
+  ],
+  "freemarker.apache.org": [
+    "notifications@freemarker.apache.org",
+    "dev@freemarker.apache.org"
+  ],
+  "amoro.apache.org": [
+    "commits@amoro.apache.org",
+    "dev@amoro.apache.org"
+  ],
+  "tamaya.apache.org": [
+    "dev@tamaya.apache.org",
+    "commits@tamaya.apache.org"
+  ],
+  "stdcxx.apache.org": [
+    "dev@stdcxx.apache.org",
+    "commits@stdcxx.apache.org",
+    "issues@stdcxx.apache.org",
+    "user@stdcxx.apache.org"
+  ],
+  "age.apache.org": [
+    "commits@age.apache.org",
+    "dev@age.apache.org",
+    "users@age.apache.org"
+  ],
+  "rya.apache.org": [
+    "notifications@rya.apache.org",
+    "dev@rya.apache.org",
+    "commits@rya.apache.org"
+  ],
+  "singa.apache.org": [
+    "dev@singa.apache.org",
+    "commits@singa.apache.org",
+    "singa-info@singa.apache.org"
+  ],
+  "submarine.apache.org": [
+    "dev@submarine.apache.org",
+    "commits@submarine.apache.org",
+    "users@submarine.apache.org"
+  ],
+  "buildr.apache.org": [
+    "commits@buildr.apache.org",
+    "users@buildr.apache.org",
+    "dev@buildr.apache.org",
+    "ci@buildr.apache.org"
+  ],
+  "whimsical.apache.org": [
+    "commits@whimsical.apache.org",
+    "dev@whimsical.apache.org"
+  ],
+  "any23.apache.org": [
+    "dev@any23.apache.org",
+    "commits@any23.apache.org",
+    "user@any23.apache.org"
+  ],
+  "systemds.apache.org": [
+    "dev@systemds.apache.org",
+    "commits@systemds.apache.org",
+    "issues@systemds.apache.org"
+  ],
+  "ariatosca.apache.org": [
+    "dev@ariatosca.apache.org",
+    "commits@ariatosca.apache.org",
+    "issues@ariatosca.apache.org",
+    "user@ariatosca.apache.org"
+  ],
+  "lucy.apache.org": [
+    "commits@lucy.apache.org",
+    "dev@lucy.apache.org",
+    "issues@lucy.apache.org",
+    "user@lucy.apache.org"
+  ],
+  "marmotta.apache.org": [
+    "commits@marmotta.apache.org",
+    "dev@marmotta.apache.org",
+    "users@marmotta.apache.org"
+  ],
+  "heron.apache.org": [
+    "commits@heron.apache.org",
+    "dev@heron.apache.org",
+    "user@heron.apache.org",
+    "issues@heron.apache.org"
+  ],
+  "datalab.apache.org": [
+    "dev@datalab.apache.org",
+    "commits@datalab.apache.org"
+  ],
+  "pegasus.apache.org": [
+    "dev@pegasus.apache.org",
+    "commits@pegasus.apache.org"
+  ],
+  "whirr.apache.org": [
+    "dev@whirr.apache.org",
+    "user@whirr.apache.org",
+    "commits@whirr.apache.org"
+  ],
+  "vcl.apache.org": [
+    "dev@vcl.apache.org",
+    "commits@vcl.apache.org",
+    "user@vcl.apache.org"
+  ],
+  "ctakes.apache.org": [
+    "dev@ctakes.apache.org",
+    "commits@ctakes.apache.org",
+    "notifications@ctakes.apache.org",
+    "user@ctakes.apache.org"
+  ],
+  "madlib.apache.org": [
+    "dev@madlib.apache.org",
+    "issues@madlib.apache.org",
+    "commits@madlib.apache.org",
+    "user@madlib.apache.org"
+  ],
+  "chukwa.apache.org": [
+    "dev@chukwa.apache.org",
+    "user@chukwa.apache.org",
+    "commits@chukwa.apache.org"
+  ],
+  "crunch.apache.org": [
+    "dev@crunch.apache.org",
+    "commits@crunch.apache.org",
+    "user@crunch.apache.org"
+  ],
+  "metamodel.apache.org": [
+    "dev@metamodel.apache.org",
+    "commits@metamodel.apache.org",
+    "issues@metamodel.apache.org",
+    "user@metamodel.apache.org"
+  ],
+  "xmlbeans.apache.org": [
+    "user@xmlbeans.apache.org",
+    "dev@xmlbeans.apache.org",
+    "commits@xmlbeans.apache.org",
+    "cxx-dev@xmlbeans.apache.org"
+  ],
+  "quickstep.apache.org": [
+    "commits@quickstep.apache.org",
+    "dev@quickstep.apache.org",
+    "issues@quickstep.apache.org",
+    "user@quickstep.apache.org"
+  ],
+  "artemis.apache.org": [
+    "issues@artemis.apache.org",
+    "commits@artemis.apache.org",
+    "users@artemis.apache.org",
+    "dev@artemis.apache.org"
+  ],
+  "griffin.apache.org": [
+    "dev@griffin.apache.org",
+    "commits@griffin.apache.org",
+    "users@griffin.apache.org"
+  ],
+  "edgent.apache.org": [
+    "dev@edgent.apache.org",
+    "commits@edgent.apache.org"
+  ],
+  "fluo.apache.org": [
+    "notifications@fluo.apache.org",
+    "commits@fluo.apache.org",
+    "dev@fluo.apache.org"
+  ],
+  "baremaps.apache.org": [
+    "commits@baremaps.apache.org",
+    "dev@baremaps.apache.org"
+  ],
+  "xtable.apache.org": [
+    "commits@xtable.apache.org",
+    "dev@xtable.apache.org"
+  ],
+  "wookie.apache.org": [
+    "dev@wookie.apache.org",
+    "commits@wookie.apache.org",
+    "user@wookie.apache.org"
+  ],
+  "esme.apache.org": [
+    "dev@esme.apache.org",
+    "commits@esme.apache.org"
+  ],
+  "nlpcraft.apache.org": [
+    "commits@nlpcraft.apache.org",
+    "dev@nlpcraft.apache.org"
+  ],
+  "wayang.apache.org": [
+    "commits@wayang.apache.org",
+    "dev@wayang.apache.org"
+  ],
+  "abdera.apache.org": [
+    "dev@abdera.apache.org",
+    "commits@abdera.apache.org",
+    "user@abdera.apache.org"
+  ],
+  "auron.apache.org": [
+    "commits@auron.apache.org",
+    "dev@auron.apache.org"
+  ],
+  "teaclave.apache.org": [
+    "dev@teaclave.apache.org",
+    "commits@teaclave.apache.org",
+    "notifications@teaclave.apache.org",
+    "issues@teaclave.apache.org"
+  ],
+  "predictionio.apache.org": [
+    "commits@predictionio.apache.org",
+    "dev@predictionio.apache.org",
+    "user@predictionio.apache.org"
+  ],
+  "wink.apache.org": [
+    "dev@wink.apache.org",
+    "commits@wink.apache.org",
+    "user@wink.apache.org"
+  ],
+  "sdap.apache.org": [
+    "dev@sdap.apache.org",
+    "commits@sdap.apache.org"
+  ],
+  "mnemonic.apache.org": [
+    "dev@mnemonic.apache.org",
+    "commits@mnemonic.apache.org"
+  ],
+  "attic.apache.org": [
+    "general@attic.apache.org",
+    "commits@attic.apache.org"
+  ],
+  "ace.apache.org": [
+    "commits@ace.apache.org",
+    "dev@ace.apache.org",
+    "users@ace.apache.org"
+  ],
+  "pagespeed.apache.org": [
+    "dev@pagespeed.apache.org",
+    "commits@pagespeed.apache.org"
+  ],
+  "tcl.apache.org": [
+    "rivet-dev@tcl.apache.org",
+    "site-cvs@tcl.apache.org",
+    "mod_dtcl@tcl.apache.org",
+    "commits@tcl.apache.org",
+    "websh-cvs@tcl.apache.org",
+    "websh-dev@tcl.apache.org",
+    "websh-user@tcl.apache.org",
+    "mod_dtcl-cvs@tcl.apache.org",
+    "mod_tcl-dev@tcl.apache.org",
+    "rivet-user@tcl.apache.org",
+    "general@tcl.apache.org"
+  ],
+  "twill.apache.org": [
+    "dev@twill.apache.org",
+    "commits@twill.apache.org"
+  ],
+  "johnzon.apache.org": [
+    "dev@johnzon.apache.org",
+    "commits@johnzon.apache.org"
+  ],
+  "gearpump.apache.org": [
+    "dev@gearpump.apache.org",
+    "commits@gearpump.apache.org",
+    "user@gearpump.apache.org"
+  ],
+  "tubemq.apache.org": [
+    "dev@tubemq.apache.org",
+    "commits@tubemq.apache.org"
+  ],
+  "graphar.apache.org": [
+    "commits@graphar.apache.org",
+    "dev@graphar.apache.org"
+  ],
+  "oltu.apache.org": [
+    "dev@oltu.apache.org",
+    "commits@oltu.apache.org",
+    "user@oltu.apache.org"
+  ],
+  "quetz.apache.org": [
+    "mod_python-dev@quetz.apache.org",
+    "mod_python-commits@quetz.apache.org"
+  ],
+  "livy.apache.org": [
+    "reviews@livy.apache.org",
+    "issues@livy.apache.org",
+    "commits@livy.apache.org",
+    "dev@livy.apache.org",
+    "user@livy.apache.org"
+  ],
+  "polygene.apache.org": [
+    "dev@polygene.apache.org",
+    "commits@polygene.apache.org",
+    "users@polygene.apache.org"
+  ],
+  "labs.apache.org": [
+    "commits@labs.apache.org",
+    "labs@labs.apache.org",
+    "tech@labs.apache.org"
+  ],
+  "bval.apache.org": [
+    "commits@bval.apache.org",
+    "dev@bval.apache.org",
+    "user@bval.apache.org"
+  ],
+  "ponymail.apache.org": [
+    "commits@ponymail.apache.org",
+    "dev@ponymail.apache.org",
+    "issues@ponymail.apache.org",
+    "users@ponymail.apache.org"
+  ],
+  "tsfile.apache.org": [
+    "commits@tsfile.apache.org",
+    "notifications@tsfile.apache.org",
+    "dev@tsfile.apache.org"
+  ],
+  "stormcrawler.apache.org": [
+    "dev@stormcrawler.apache.org",
+    "commits@stormcrawler.apache.org"
+  ],
+  "empire-db.apache.org": [
+    "commits@empire-db.apache.org",
+    "dev@empire-db.apache.org",
+    "user@empire-db.apache.org"
+  ],
+  "htrace.apache.org": [
+    "issues@htrace.apache.org",
+    "dev@htrace.apache.org",
+    "commits@htrace.apache.org",
+    "user@htrace.apache.org"
+  ],
+  "tiles.apache.org": [
+    "issues@tiles.apache.org",
+    "commits@tiles.apache.org",
+    "users@tiles.apache.org",
+    "dev@tiles.apache.org"
+  ],
+  "bahir.apache.org": [
+    "dev@bahir.apache.org",
+    "reviews@bahir.apache.org",
+    "commits@bahir.apache.org",
+    "user@bahir.apache.org"
+  ],
+  "hivemall.apache.org": [
+    "issues@hivemall.apache.org",
+    "commits@hivemall.apache.org",
+    "dev@hivemall.apache.org",
+    "user@hivemall.apache.org"
+  ],
+  "click.apache.org": [
+    "dev@click.apache.org",
+    "user@click.apache.org",
+    "commits@click.apache.org"
+  ],
+  "horaedb.apache.org": [
+    "commits@horaedb.apache.org",
+    "dev@horaedb.apache.org"
+  ],
+  "hivemind.apache.org": [
+    "dev@hivemind.apache.org",
+    "user@hivemind.apache.org",
+    "commits@hivemind.apache.org"
+  ],
+  "serf.apache.org": [
+    "dev@serf.apache.org",
+    "notifications@serf.apache.org",
+    "announce@serf.apache.org"
+  ],
+  "myriad.apache.org": [
+    "dev@myriad.apache.org",
+    "commits@myriad.apache.org"
+  ],
+  "casbin.apache.org": [
+    "commits@casbin.apache.org",
+    "dev@casbin.apache.org"
+  ],
+  "tuweni.apache.org": [
+    "dev@tuweni.apache.org",
+    "commits@tuweni.apache.org",
+    "users@tuweni.apache.org",
+    "issues@tuweni.apache.org"
+  ],
+  "devicemap.apache.org": [
+    "dev@devicemap.apache.org",
+    "commits@devicemap.apache.org"
+  ],
+  "excalibur.apache.org": [
+    "dev@excalibur.apache.org",
+    "scm@excalibur.apache.org",
+    "user@excalibur.apache.org"
+  ],
+  "datafu.apache.org": [
+    "dev@datafu.apache.org",
+    "commits@datafu.apache.org"
+  ],
+  "vxquery.apache.org": [
+    "dev@vxquery.apache.org",
+    "commits@vxquery.apache.org"
+  ],
+  "fesod.apache.org": [
+    "commits@fesod.apache.org",
+    "dev@fesod.apache.org"
+  ],
+  "magpie.apache.org": [
+    "commits@magpie.apache.org",
+    "dev@magpie.apache.org"
+  ],
+  "resilientdb.apache.org": [
+    "commits@resilientdb.apache.org",
+    "dev@resilientdb.apache.org"
+  ],
+  "flagon.apache.org": [
+    "dev@flagon.apache.org",
+    "commits@flagon.apache.org",
+    "notifications@flagon.apache.org",
+    "maintenance@flagon.apache.org",
+    "pr@flagon.apache.org",
+    "user@flagon.apache.org"
+  ],
+  "joshua.apache.org": [
+    "dev@joshua.apache.org",
+    "commits@joshua.apache.org",
+    "user@joshua.apache.org"
+  ],
+  "commonsrdf.apache.org": [
+    "commits@commonsrdf.apache.org",
+    "dev@commonsrdf.apache.org"
+  ],
+  "hamilton.apache.org": [
+    "notifications@hamilton.apache.org",
+    "commits@hamilton.apache.org",
+    "dev@hamilton.apache.org",
+    "users@hamilton.apache.org"
+  ],
+  "shale.apache.org": [
+    "user@shale.apache.org",
+    "dev@shale.apache.org",
+    "issues@shale.apache.org",
+    "commits@shale.apache.org",
+    "notifications@shale.apache.org"
+  ],
+  "directmemory.apache.org": [
+    "dev@directmemory.apache.org",
+    "commits@directmemory.apache.org",
+    "user@directmemory.apache.org"
+  ],
+  "mrunit.apache.org": [
+    "dev@mrunit.apache.org",
+    "commits@mrunit.apache.org",
+    "user@mrunit.apache.org"
+  ],
+  "nemo.apache.org": [
+    "dev@nemo.apache.org",
+    "notifications@nemo.apache.org",
+    "commits@nemo.apache.org",
+    "users@nemo.apache.org"
+  ],
+  "tephra.apache.org": [
+    "dev@tephra.apache.org",
+    "commits@tephra.apache.org"
+  ],
+  "toree.apache.org": [
+    "dev@toree.apache.org",
+    "commits@toree.apache.org",
+    "reviews@toree.apache.org"
+  ],
+  "openserverless.apache.org": [
+    "commits@openserverless.apache.org",
+    "dev@openserverless.apache.org"
+  ],
+  "senssoft.apache.org": [
+    "dev@senssoft.apache.org",
+    "commits@senssoft.apache.org",
+    "user@senssoft.apache.org"
+  ],
+  "pirk.apache.org": [
+    "commits@pirk.apache.org",
+    "dev@pirk.apache.org"
+  ],
+  "omid.apache.org": [
+    "dev@omid.apache.org",
+    "commits@omid.apache.org"
+  ],
+  "zipkin.apache.org": [
+    "commits@zipkin.apache.org",
+    "dev@zipkin.apache.org",
+    "users@zipkin.apache.org"
+  ],
+  "burr.apache.org": [
+    "notifications@burr.apache.org",
+    "commits@burr.apache.org",
+    "dev@burr.apache.org",
+    "users@burr.apache.org"
+  ],
+  "s2graph.apache.org": [
+    "dev@s2graph.apache.org",
+    "commits@s2graph.apache.org",
+    "users@s2graph.apache.org"
+  ],
+  "onami.apache.org": [
+    "dev@onami.apache.org",
+    "commits@onami.apache.org",
+    "user@onami.apache.org"
+  ],
+  "etch.apache.org": [
+    "dev@etch.apache.org",
+    "commits@etch.apache.org",
+    "user@etch.apache.org"
+  ],
+  "samoa.apache.org": [
+    "dev@samoa.apache.org",
+    "commits@samoa.apache.org",
+    "users@samoa.apache.org"
+  ],
+  "milagro.apache.org": [
+    "commits@milagro.apache.org",
+    "dev@milagro.apache.org",
+    "issues@milagro.apache.org",
+    "release-mgmt@milagro.apache.org",
+    "users@milagro.apache.org"
+  ],
+  "corinthia.apache.org": [
+    "dev@corinthia.apache.org",
+    "commits@corinthia.apache.org"
+  ],
+  "training.apache.org": [
+    "dev@training.apache.org",
+    "commits@training.apache.org",
+    "notifications@training.apache.org",
+    "issues@training.apache.org"
+  ],
+  "diversity.apache.org": [
+    "dev@diversity.apache.org"
+  ],
+  "annotator.apache.org": [
+    "dev@annotator.apache.org",
+    "commits@annotator.apache.org"
+  ],
+  "batchee.apache.org": [
+    "dev@batchee.apache.org",
+    "commits@batchee.apache.org",
+    "user@batchee.apache.org"
+  ],
+  "ripple.apache.org": [
+    "dev@ripple.apache.org",
+    "commits@ripple.apache.org"
+  ],
+  "maka.apache.org": [
+    "commits@maka.apache.org",
+    "dev@maka.apache.org"
+  ],
+  "gossip.apache.org": [
+    "dev@gossip.apache.org",
+    "commits@gossip.apache.org"
+  ],
+  "steve.apache.org": [
+    "commits@steve.apache.org",
+    "dev@steve.apache.org",
+    "issues@steve.apache.org",
+    "user@steve.apache.org"
+  ],
+  "otava.apache.org": [
+    "commits@otava.apache.org",
+    "dev@otava.apache.org"
+  ],
+  "sirona.apache.org": [
+    "commits@sirona.apache.org",
+    "dev@sirona.apache.org",
+    "user@sirona.apache.org"
+  ],
+  "spot.apache.org": [
+    "dev@spot.apache.org",
+    "commits@spot.apache.org",
+    "user@spot.apache.org"
+  ],
+  "ozhera.apache.org": [
+    "commits@ozhera.apache.org",
+    "dev@ozhera.apache.org"
+  ],
+  "mrql.apache.org": [
+    "dev@mrql.apache.org",
+    "commits@mrql.apache.org",
+    "user@mrql.apache.org"
+  ],
+  "geaflow.apache.org": [
+    "issues@geaflow.apache.org",
+    "builds@geaflow.apache.org",
+    "commits@geaflow.apache.org",
+    "dev@geaflow.apache.org"
+  ],
+  "depot.apache.org": [
+    "dev@depot.apache.org",
+    "cvs@depot.apache.org"
+  ],
+  "petri.apache.org": [
+    "commits@petri.apache.org",
+    "discuss@petri.apache.org"
+  ],
+  "crail.apache.org": [
+    "dev@crail.apache.org",
+    "commits@crail.apache.org",
+    "issues@crail.apache.org"
+  ],
+  "bifromq.apache.org": [
+    "commits@bifromq.apache.org",
+    "dev@bifromq.apache.org"
+  ],
+  "pouchdb.apache.org": [
+    "commits@pouchdb.apache.org",
+    "dev@pouchdb.apache.org"
+  ],
+  "liminal.apache.org": [
+    "dev@liminal.apache.org",
+    "commits@liminal.apache.org",
+    "issues@liminal.apache.org"
+  ],
+  "amaterasu.apache.org": [
+    "dev@amaterasu.apache.org",
+    "commits@amaterasu.apache.org"
+  ],
+  "iota.apache.org": [
+    "dev@iota.apache.org",
+    "commits@iota.apache.org",
+    "users@iota.apache.org"
+  ],
+  "kibble.apache.org": [
+    "dev@kibble.apache.org",
+    "issues@kibble.apache.org",
+    "commits@kibble.apache.org",
+    "users@kibble.apache.org"
+  ],
+  "horn.apache.org": [
+    "dev@horn.apache.org"
+  ],
+  "hdt.apache.org": [
+    "dev@hdt.apache.org",
+    "commits@hdt.apache.org"
+  ],
+  "ossie.apache.org": [
+    "issues@ossie.apache.org",
+    "commits@ossie.apache.org",
+    "dev@ossie.apache.org"
+  ],
+  "drat.apache.org": [
+    "dev@drat.apache.org",
+    "commits@drat.apache.org"
+  ],
+  "openaz.apache.org": [
+    "dev@openaz.apache.org",
+    "commits@openaz.apache.org",
+    "users@openaz.apache.org"
+  ],
+  "marvin.apache.org": [
+    "dev@marvin.apache.org",
+    "notifications@marvin.apache.org",
+    "commits@marvin.apache.org",
+    "issues@marvin.apache.org"
+  ],
+  "provisionr.apache.org": [
+    "dev@provisionr.apache.org",
+    "commits@provisionr.apache.org"
+  ],
+  "mesatee.apache.org": [
+    "dev@mesatee.apache.org",
+    "commits@mesatee.apache.org",
+    "issues@mesatee.apache.org",
+    "notifications@mesatee.apache.org"
+  ],
+  "cmda.apache.org": [
+    "commits@cmda.apache.org",
+    "dev@cmda.apache.org",
+    "users@cmda.apache.org"
+  ],
+  "bluemarlin.apache.org": [
+    "dev@bluemarlin.apache.org",
+    "commits@bluemarlin.apache.org"
+  ],
+  "conferences.apache.org": [
+    "notifications@conferences.apache.org"
+  ],
+  "concerted.apache.org": [
+    "dev@concerted.apache.org",
+    "issues@concerted.apache.org",
+    "commits@concerted.apache.org"
+  ],
+  "tac.apache.org": [
+    "commits@tac.apache.org",
+    "notifications@tac.apache.org"
+  ],
+  "caldera.apache.org": [
+    "commits@caldera.apache.org",
+    "dev@caldera.apache.org"
+  ],
+  "warble.apache.org": [
+    "commits@warble.apache.org",
+    "dev@warble.apache.org",
+    "users@warble.apache.org"
+  ],
+  "hunter.apache.org": [
+    "dev@hunter.apache.org",
+    "commits@hunter.apache.org"
+  ],
+  "composer.apache.org": [
+    "commits@composer.apache.org"
+  ],
+  "rai.apache.org": [
+    "site-notify@rai.apache.org"
+  ],
+  "security.apache.org": [
+    "commits@security.apache.org"
+  ],
+  "cotton.apache.org": [
+    "dev@cotton.apache.org"
+  ],
+  "android.apache.org": [
+    "interest@android.apache.org"
+  ],
+  "asyncband.apache.org": [
+    "commits@asyncband.apache.org"
+  ],
+  "infratest.apache.org": [
+    "test@infratest.apache.org"
+  ]
+}

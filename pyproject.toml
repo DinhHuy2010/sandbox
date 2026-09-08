@@ -10,6 +10,8 @@ dependencies = [
     "bleach-allowlist>=1.0.3",
     "certifi>=2026.2.25",
     "content-negotiation>=1.1.2",
+    "cryptography>=46.0.5",
+    "duckdb>=1.5.5",
     "dulwich>=1.1.0",
     "faker>=40.5.1",
     "fastapi[standard]>=0.135.2",
@@ -34,8 +36,12 @@ dependencies = [
     "opentelemetry-instrumentation-httpx>=0.62b1",
     "orjson>=3.11.7",
     "packaging>=26.0",
+    "polars>=1.42.1",
     "polyfactory>=3.3.0",
+    "prompt-toolkit>=3.0.52",
+    "psutil>=7.2.2",
     "pydantic[email]>=2.12.5",
+    "pygit2>=1.19.2",
     "pyinterpeter",
     "pyjwt>=2.13.0",
     "pypi-simple>=1.8.0",
@@ -79,6 +85,11 @@ members = [
     "json-schema-project",
     "funny",
     "code-search",
+    "pypi-3",
+    "ruff-datasets",
+    "my-own-pep517-system",
+    "gharchive",
+    "apache-mailing-list",
 ]
 
 [tool.uv.sources]

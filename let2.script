@@ -1,0 +1,18 @@
+<command_call> = /<command> <values[]> <option>
+<command> = p1 p2 p3 ...
+<values> = string | number | float | magicref ("<magicnamehere>") | <command_call> under /(...) | <file>
+<option> = -<optionname> <values> | --<optionname> <values> | --<booleanoptionname> | -<booleanoptionname>
+
+<file> = @<filepath relative or absolute>
+
+<magicref> = <(insert name here)>
+
+<user define function block> = 
+:define <functionname as values>
+:parameters <p1 as values> <p2 as values> ...
+:start
+<command_call(s)>
+:end
+
+/<functionname> <values[]> <option>
+

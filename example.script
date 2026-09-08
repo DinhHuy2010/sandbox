@@ -1,0 +1,9 @@
+/variable set "Hello" "World"
+/variable set "cache" /(dict create)
+/define "fib" "n" /(whatif /(dict has /(variable get "cache") <params.n>) /(dict get /(variable get "cache") <params.n>) /(let "result" /(whatif /(compare le <params.n> 1) <params.n> /(math add     /(fib /(math subtract <params.n> 1))     /(fib /(math subtract <params.n> 2)) ) ) /(do     /(variable set         "cache"         /(dict set             /(variable get "cache")             <params.n>             <local.result>         )     )     <local.result> )))
+/fib 500
+/fib 1000
+/fib 1500
+/fib 2000
+/fib 2500
+/fib 3000

@@ -1,0 +1,15 @@
+aria2c \
+  --input-file=input.txt \
+  --save-session=input.aria2c.session \
+  --save-session-interval=30 \
+  --max-concurrent-downloads=32 \
+  --split=1 \
+  --max-connection-per-server=1 \
+  --continue=true \
+  --auto-file-renaming=false \
+  --allow-overwrite=false \
+  --max-tries=5 \
+  --retry-wait=3 \
+  --connect-timeout=15 \
+  --timeout=60 \
+  --summary-interval=10
