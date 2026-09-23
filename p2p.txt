@@ -1,0 +1,51 @@
+p2p pull org.mozilla.firefox:115
+--> Finding org.mozilla.firefox:115........., done
+--> Found org.mozilla.firefox:115 cache at p2p host https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115
+--> Verifiying package......., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Downloading package asset '<name>' (https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115/assets/<hash>)........., done
+--> Reverifying package assets......., done
+--> Pushing to my cache at https://pseudop2p.p2ppackages.org/hosts/<this-uuid>/package/org.mozilla.firefox/115........., done
+Successfully pulled org.mozilla.firefox:115 to local cache at ~/.p2p/cache/packages/org.mozilla.firefox/115
+
+p2p run org.mozilla.firefox:115
+--> Finding org.mozilla.firefox:115........., done
+--> Found org.mozilla.firefox:115 locally.
+--> Creating container for org.mozilla.firefox:115........., done
+--> Running org.mozilla.firefox:115.......
+--> OK
+Container org.mozilla.firefox:115 is running.
+
+p2p stop org.mozilla.firefox:115
+--> Stopping org.mozilla.firefox:115........., done
+Container org.mozilla.firefox:115 is stopped.
+
+p2p remove org.mozilla.firefox:115
+--> Removing org.mozilla.firefox:115........., done
+--> Removing org.mozilla.firefox:115 from local cache........., done
+--> Removing org.mozilla.firefox:115 from my cache at https://pseudop2p.p2ppackages.org/hosts/<this-uuid>/package/org.mozilla.firefox/115........., done
+Successfully removed org.mozilla.firefox:115 from local cache and my cache at https://pseudop2p.p2ppackages.org/hosts/<this-uuid>/package/org.mozilla.firefox/115
+
+first
+POST pseudop2p.p2ppackages.org/finder
+{
+    "package.name": "org.mozilla.firefox",
+    "package.version": "115",
+    "identifiy.asn": "AS15169",
+    "identifiy.country": "US",
+    "identifiy.daemon_node": <uuid>,
+    "identifiy.public_key": "<public_key>",
+}
+HTTP 1.1 200 OK
+Content-Type: application/json+lines
+{"status": "searching"}
+{"status": "searching"}
+{"status": "searching"}
+...
+{"status": "found", "hosts": 6321, "choosen_host": "https://pseudop2p.p2ppackages.org/hosts/<uuid>/package/org.mozilla.firefox/115"}
+
