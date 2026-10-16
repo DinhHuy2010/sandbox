@@ -16,6 +16,7 @@ dependencies = [
     "faker>=40.5.1",
     "fastapi[standard]>=0.135.2",
     "fsspec[http]>=2026.4.0",
+    "htmllistparse>=0.6.1",
     "httpx-sse>=0.4.3",
     "httpx[http2]>=0.28.1",
     "icalendar",

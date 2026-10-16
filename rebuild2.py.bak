@@ -1,0 +1,71 @@
+import random
+import string
+
+
+def create_identifier():
+    c = random.choice(string.ascii_letters + "_")
+    return c + "".join(
+        random.choice(string.ascii_letters + string.digits + "_") for _ in range(7)
+    )
+
+
+def create_binop(op, *expression_strs):
+    return op.join(expression_strs)
+
+
+def create_variable_assignment(identifer, expression):
+    return f"{identifer} = {expression}"
+
+
+def wrap_in_brace(expression):
+    return f"({expression})"
+
+
+def ternary_operator(condition, true_expr, false_expr):
+    return f"({true_expr} if {condition} else {false_expr})"
+
+
+def create_dict(expressions):
+    return (
+        "{" + ", ".join(f"{key}: {value}" for key, value in expressions.items()) + "}"
+    )
+
+
+def create_list(elements):
+    return "[" + ", ".join(elements) + "]"
+
+
+def create_tuple(elements):
+    return "(" + ", ".join(elements) + ")"
+
+
+def create_set(elements):
+    return "{" + ", ".join(elements) + "}"
+
+
+def create_function_call(function_name, arguments, keyword_arguments=None):
+    args_str = ", ".join(arguments)
+    if keyword_arguments:
+        kw_str = ", ".join(f"{key}={value}" for key, value in keyword_arguments.items())
+        if args_str:
+            args_str += ", " + kw_str
+        else:
+            args_str = kw_str
+    return f"{function_name}(" + args_str + ")"
+
+
+def create_return(expression):
+    return f"return {expression}"
+
+
+def create_function_body(name, args, body):
+    args_str = ", ".join(args)
+    body_str = "\n    ".join(body)
+    return f"def {name}({args_str}):\n    {body_str}"
+
+
+add = create_identifier()
+a, b = create_identifier(), create_identifier()
+body = [create_return(create_binop("+", a, b))]
+function_code = create_function_body(add, [a, b], body)
+print(function_code)
