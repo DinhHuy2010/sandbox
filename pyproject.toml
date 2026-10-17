@@ -91,6 +91,7 @@ members = [
     "my-own-pep517-system",
     "gharchive",
     "apache-mailing-list",
+    "vtvcab-data",
 ]
 
 [tool.uv.sources]
