@@ -1,0 +1,24 @@
+/
+    /system
+        /services
+            <service name>.services.system.os.acme.net/
+                data/
+                    status.services.properties.system.os.acme.net/value
+                    config.services.properties.system.os.acme.net/
+                        metadata/value
+                        onStart/execute/
+                            type
+                            script
+                        onStop/execute/
+                            type
+                            script
+                        restartOnFailure/value
+        /packages
+            <package name>.<packager>.packages.os.acme.net/
+                metadata/
+                    name.packages.properties.os.acme.net/value
+                    entries.packages.properties.os.acme.net/value/{0,1,2,...}
+                    inst
+    /boot
+    /users
+        /john

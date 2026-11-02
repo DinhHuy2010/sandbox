@@ -1,0 +1,21 @@
+[channels]
+ids = "*" # or [1, 2, ...]
+
+[range]
+from = 2014-12-29
+to = 2026-12-31
+
+[output]
+directory = "out/raw"
+
+[downloader]
+max-concurrent-requests = 100
+timeout = 30
+retry = 3000                 # milliseconds
+backoff = 1.5                 # multiplier
+reporting-interval = 2        # seconds
+
+# output
+# <mountpoint>/
+#       status.json # status of the downloader
+#       data/<channel_id>/YYYY-MM/DD.json # add .notfinised for atomically

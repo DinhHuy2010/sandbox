@@ -1,0 +1,33 @@
+# Root structures
+# /
+#  /program
+#  /types
+#  /states
+#  /builtins
+#  <object>:/
+#       /metadata
+#            /type -> <symlink to actual type like /types/<name>>
+
+# Define a block with /program/<name>
+/program/hello_world {
+    responds "Hello, world!"
+}
+
+# Define another block that uses the previous block
+# Use "!" to denote the main entry point of the program
+!/program/main {
+    # define a variable
+    /program/hello_world > /states/scopes/current/variables/greeting
+    /builtins/print /states/scopes/current/variables/greeting
+    /builtins/print "This is the main program."
+    /builtins/print /states/scopes/current/variables/greeting:/metadata/type
+    # /states/scopes/current/variables/greeting:/metadata/type symlink to /types/string
+
+    # /states/runtime/info/version -> /types/version "1.0.0"
+    # /states/runtime/info/license -> "MIT"
+    # /states/runtime/info/build/compiler -> "gcc"
+    # /states/runtime/info/build/flags -> "-O2 -Wall"
+    # /states/runtime/info/build/target -> "x86_64-linux-gnu"
+    # /states/runtime/info/build/host -> "localhost"
+    # /states/runtime/info/build/date -> /types/date "2024-06-01" 
+}

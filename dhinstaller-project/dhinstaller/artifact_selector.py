@@ -90,7 +90,7 @@ def artifact_sort_key(
     )
 
 
-def distriution_type(filename: str) -> Literal["wheel", "sdist", "unknown"]:
+def distribution_type(filename: str) -> Literal["wheel", "sdist", "unknown"]:
     """Determine the distribution type represented by a filename.
 
     Parameters
@@ -122,7 +122,7 @@ def find_best_artifacts(
     env: Environment,
     files: Sequence[File],
     version_constraints: SpecifierSet | None = None,
-) -> tuple[File, str]:
+) -> tuple[File | None, str]:
     """Find the best artifact for an environment and optional version constraint.
 
     Parameters
@@ -151,7 +151,7 @@ def find_best_artifacts(
         if version is None:
             continue
         files_by_version.setdefault(version, []).append(
-            (file, distriution_type(file.filename))
+            (file, distribution_type(file.filename))
         )
 
     best_files_by_versions = {

@@ -5,6 +5,10 @@ requires-python = ">=3.12"
 dependencies = [
     "anyio>=4.12.1",
     "arrow>=1.4.0",
+    "msgspec>=0.22.0",
     "niquests>=3.21.0",
+    "orjson>=3.13.0",
+    "polars>=2.0.0",
+    "tqdm>=4.70.1",
     "uvloop>=0.22.1",
 ]

@@ -9,18 +9,23 @@ PARAM = "date"
 session = requests.Session()
 
 
-def check(day):
+def debug(*msg: str):
+    if RUNNING_FROM_MAIN:
+        print("[DEBUG]", *msg)
+
+
+def check(day: date) -> bool:
     response = session.get(URL, params={PARAM: day.isoformat()}, timeout=15)
 
-    print(day, response.status_code)
-
     if response.status_code == 200:
+        debug(f"Found supported date: {day.isoformat()}")
         return True
 
     if response.status_code == 429:
         raise RuntimeError("Rate limited")
 
     if response.status_code == 500:
+        debug(f"Out of range: {day.isoformat()}")
         return False  # Assumption: outside supported range
 
     raise RuntimeError(f"Unexpected HTTP {response.status_code}")
@@ -35,7 +40,9 @@ def find_max_date(start=date(2022, 12, 31)):
         hi = min(lo + step, date.max.toordinal())
 
         time.sleep(0.5)
+        debug("Attempting to check date:", date.fromordinal(hi).isoformat())
         if not check(date.fromordinal(hi)):
+            debug("Found upper bound:", date.fromordinal(hi).isoformat())
             break
 
         lo = hi
@@ -47,6 +54,12 @@ def find_max_date(start=date(2022, 12, 31)):
     # Phase 2: Binary search
     while hi - lo > 1:
         mid = (lo + hi) // 2
+        debug(
+            "Finding dates between:",
+            date.fromordinal(lo).isoformat(),
+            "and",
+            date.fromordinal(hi).isoformat(),
+        )
 
         time.sleep(0.5)
         if check(date.fromordinal(mid)):
@@ -57,4 +70,6 @@ def find_max_date(start=date(2022, 12, 31)):
     return date.fromordinal(lo)
 
 
-print("Maximum supported date:", find_max_date())
+RUNNING_FROM_MAIN = __name__ == "__main__"
+if RUNNING_FROM_MAIN:
+    print("Maximum supported date:", find_max_date())

@@ -1,0 +1,16 @@
+/
+    /system
+        /packages
+            /<system|usermade>-<name>.<version>.<asset-hash>
+                /about
+                    /meta.json
+                /root -> package root goes HERE
+        /binaries
+    /users
+        /john
+            /home
+            /etc
+        ...
+    /user -> /users/john
+
+

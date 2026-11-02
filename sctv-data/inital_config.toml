@@ -1,0 +1,24 @@
+[channels]
+ids = [83] # Use "*" after implementing channel discovery
+
+[range]
+# from = 2014-12-29
+# to = 2026-12-31
+targets = [
+    { from = 2024-12-29, to = 2025-02-09 }, # 43 days
+    { from = 2026-06-01, to = 2026-06-30 }, # 30 days
+    { from = 2024-08-01, to = 2024-08-19 }, # 19 days
+    { from = 2025-05-01, to = 2025-05-18 }, # 18 days
+    { from = 2019-02-04, to = 2019-02-20 }, # 17 days
+    { from = 2025-09-08, to = 2025-09-21 }, # 14 days
+]
+
+[output]
+directory = "out/raw-stage2"
+
+[downloader]
+max-concurrent-requests = 10
+timeout = 30
+retry = 3000 # Initial delay in milliseconds
+backoff = 1.5
+max-attempts = 5

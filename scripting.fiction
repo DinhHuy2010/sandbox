@@ -1,0 +1,48 @@
+// init
+// define function main {
+//     print "Welcome to the scripting fiction environment!"
+// }
+// add .
+// commit -m "Initial commit with main function"
+
+[storage]
+layout --use-first-disk --use-all --filesystem=ext4
+
+[networking]
+set networking.wifi false
+set networking.hostname "scripting-fiction-btw"
+autoconfig
+
+[datetime]
+set datetime.timezone "UTC"
+sync --ntp=pool.ntp.org --sync-rtc --same-for-rtc
+
+[packages]
+select index sftp://installers:installers@customos.itmirror.infra.corp.acme.net/mirrors/customos/releases/rolling/index
+set packages.download.workers 8
+set packages.download.retry 10
+set packages.download.timeout 30
+
+install gnu/{coreutils,findutils,grep,sed,tar,wget}
+install zip/{unzip,zip}
+install net/{curl,iproute2,net-tools,openssh,rsync,telnet}
+install gcc/gcc --version=14
+install psf/cpython --version=3.12 --postinstall=#postinstall.python3
+
+
+install internal/metapackage
+
+[users]
+users add developer --initial-password=devpass --shell=/bin/bash --groups=wheel,users
+users add admin --initial-password=adminpass --shell=/bin/bash --groups=wheel,users
+users add guest --initial-password=guestpass --shell=/bin/bash --groups=users --home-directory=/tmp/guest
+
+[postinstall]
+run bash```
+echo "Install successfully!"
+curl -fsSL https://postinstall.infra.corp.acme.net/postinstall.sh | bash
+```
+
+[postinstall.python3]
+install --part-of=python3 psf/pypi/{requests,flask,pytest,numpy,pandas,scipy,matplotlib,seaborn,jupyterlab}
+

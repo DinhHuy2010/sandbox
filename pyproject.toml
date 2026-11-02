@@ -92,6 +92,7 @@ members = [
     "gharchive",
     "apache-mailing-list",
     "vtvcab-data",
+    "sctv-data",
 ]
 
 [tool.uv.sources]
