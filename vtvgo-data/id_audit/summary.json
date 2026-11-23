@@ -1,0 +1,34 @@
+{
+  "input_files": 182,
+  "rows": 370128,
+  "channels_present": 113,
+  "distinct_occurrences_by_channel_time_pid_title": 368851,
+  "unique_slot_ids": 368779,
+  "unique_program_ids": 323477,
+  "missing_fields": {
+    "programID": 42322
+  },
+  "slot_ids_appearing_multiple_times": 1249,
+  "slot_ids_with_different_occurrence_signatures": 72,
+  "slot_ids_spanning_multiple_channels": 0,
+  "slot_ids_mapping_to_multiple_program_ids": 23,
+  "slot_ids_with_multiple_versions": 0,
+  "program_ids_linked_to_multiple_slots": 3111,
+  "program_ids_spanning_multiple_channels": 3111,
+  "program_ids_associated_with_multiple_titles": 1,
+  "version_distribution": {
+    "1": 310337,
+    "2": 48975,
+    "3": 9314,
+    "6": 12,
+    "4": 1360,
+    "5": 115,
+    "7": 3,
+    "11": 2,
+    "10": 1,
+    "8": 4,
+    "9": 3,
+    "57": 1,
+    "59": 1
+  }
+}

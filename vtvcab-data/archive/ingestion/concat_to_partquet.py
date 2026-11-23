@@ -6,7 +6,7 @@ import orjson
 import polars as pl
 from tqdm import tqdm
 
-path = pathlib.Path(__file__).parent / "out/raw"
+path = pathlib.Path.cwd() / "out/raw"
 
 total = []
 
@@ -17,7 +17,8 @@ with contextlib.ExitStack() as stack:
         data = orjson.loads(f.read())
         total.extend([i for d in data["data"] for i in d["items"]])
 pl.DataFrame(total).write_parquet(
-    pathlib.Path(__file__).parent / f"out/vtvcab_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.parquet",
+    pathlib.Path.cwd()
+    / f"out/vtvcab_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.parquet",
     compression="zstd",
     compression_level=9,
 )

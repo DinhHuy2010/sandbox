@@ -9,6 +9,12 @@ dependencies = [
     "niquests>=3.21.0",
     "orjson>=3.13.0",
     "polars>=2.0.0",
+    "structlog>=26.1.0",
     "tqdm>=4.70.1",
+    "typer>=0.27.3",
     "uvloop>=0.22.1",
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

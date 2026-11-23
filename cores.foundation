@@ -1,0 +1,60 @@
+//Request := CreateStructure("resources/http/Request") |
+//    AddField("url", GetStructure("resources/data/String")) |
+//    AddField("method", GetStructure("resources/data/String")) |
+//    AddField("headers",
+//        GetStructure("resources/data/Map") |
+//        Annotate("#Key", GetStructure("resources/data/String")) |
+//        Annotate("#Value", GetStructure("resources/data/String"))
+//    ) |
+//    AddField("body", GetStructure("resources/data/Binary")) |
+//    (AddFunction("Send", GetStructure("resources/http/Response")) |
+//        AddParameter("timeout", GetStructure("resources/data/Number")) |
+//        AddParameter("followRedirects", GetStructure("resources/data/Boolean")) |
+//        ...
+//    )
+//
+
+Print("Hello, world!")
+Print("Hello, world!") > Path("cores.log") // print "Hello, world!" to cores.log path
+Fail("errors/generic", "An error occurred") || Print("Fail!") // print "Fail!" if the previous statement fails
+Fail("errors/generic", "An error occurred") && Print("Fail!") // print "Fail!" if the previous statement succeeds
+Fail("errors/generic", "An error occurred") | Print("Fail!") // print "Fail!" regardless of the previous statement's result
+
+// Piping
+A | B(_) | C(_) # Same as C(B(A))
+Value(2) | Add(_, 3) | Print(_) # Prints 5
+
+// Function and varaibles
+HelloWorld = Function({
+    Print("Hello, world!")
+    Value(2) // Last value is returned
+}) // {} means function block
+
+HelloWorld() // Call the function, prints "Hello, world!" and returns 2
+HelloWorld() | Add(_, 3) | Print(_) // Prints 5
+
+// Loops
+For(Iterator.Range(1, 5), {
+    Print(_) // Prints 1, 2, 3, 4, 5
+    // Continue() // Uncomment to skip the rest of the loop body and continue to the next iteration
+    // Break() // Uncomment to exit the loop
+})
+
+x = Value(0)
+While(x < 5, {
+    Print(x)
+    x = Add(x, 1)
+})
+
+// Statements
+Match(Value(2), {
+    Case(Equal(_, Value(1)), {
+        Print("Case 1")
+    })
+    Case(Equal(_, Value(2)), {
+        Print("Case 2") // This case will be executed
+    })
+    Default({
+        Print("Default case")
+    })
+})

@@ -35,9 +35,7 @@ def rename(old_name: str, new_name: str):
     new_path = DATA_DIR / new_name
     if old_path.exists():
         old_path.rename(new_path)
-        print(f"Renamed {old_name} to {new_name}")
-    else:
-        print(f"File {old_name} does not exist. Cannot rename.")
+        print(f"--> Renamed {old_name} to {new_name}")
 
 
 async def main(from_date, to_date):
@@ -49,10 +47,11 @@ async def main(from_date, to_date):
         nonlocal out
         data = await request(date)
         if data is not None:
+            print("--> Successfully fetched data for", date.format("YYYY-MM-DD"))
             out[date.format("YYYY-MM-DD")] = data
 
     print(
-        f"Refetching data from {from_date.format('YYYY-MM-DD')} to {to_date.format('YYYY-MM-DD')}"
+        f"--> Refetching data from {from_date.format('YYYY-MM-DD')} to {to_date.format('YYYY-MM-DD')}"
     )
     refreshed, missing = 0, 0
     tasks = []
@@ -65,15 +64,18 @@ async def main(from_date, to_date):
             refreshed += 1
         else:
             missing += 1
-    print(f"Refreshed: {refreshed}, Missing: {missing}")
+    print(f"--> Refreshed: {refreshed}, Missing: {missing}")
     for date, data in out.items():
         if not data:
             continue
         filename = f"{date}.json"
         filepath = DATA_DIR / filename
-        print(f"Writing data for {date} to {filepath}")
         rename(filename, f"{date}.json.{token_hex(4)}.bak")
-        async with await anyio.open_file(filepath, "wb",) as f:
+        print(f"--> Writing data for {date} to {filepath}")
+        async with await anyio.open_file(
+            filepath,
+            "wb",
+        ) as f:
             await f.write(data)
 
 

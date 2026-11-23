@@ -10,9 +10,10 @@ import orjson
 from tqdm import tqdm
 
 RAW_DIRECTORY = Path("out/raw").resolve()
-PROCESSED_DIRECTORY = Path("out/processed").resolve()
-TODAY = date.today()
 LOCAL_TZ = zoneinfo.ZoneInfo("Asia/Ho_Chi_Minh")
+NOW = datetime.now(tz=LOCAL_TZ)
+TODAY = NOW.date()
+PROCESSED_DIRECTORY = Path(f"out/processed_{NOW.strftime('%Y%m%d_%H%M%S')}").resolve()
 
 
 class BroadcastEntry(msgspec.Struct):

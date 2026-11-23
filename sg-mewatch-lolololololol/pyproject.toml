@@ -1,0 +1,7 @@
+[project]
+name = "sg-mewatch-lolololololol"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "niquests>=3.21.2",
+]
